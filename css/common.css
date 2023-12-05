@@ -329,6 +329,7 @@ body {
     outline: none;
     box-shadow: none;
     background: var(--shade2);
+    z-index: 0 !important;
 }
 
 .btn-41:after {

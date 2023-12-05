@@ -44,7 +44,7 @@
 .swiper-pagination-bullet {
     padding: 10px !important;
     transition: 0.1s linear all !important;
-    /* background-color: var(--dark) !important; */
+    background-color: var(--light) !important;
     background-blend-mode: difference;
     opacity: 1 !important;
 }
