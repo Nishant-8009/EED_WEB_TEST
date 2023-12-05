@@ -7,9 +7,9 @@ const loaderInit = () => {
     loaderContainer.id = "main_loader";
     // Create an img element
     let img = document.createElement('img');
-    img.src = "/assets/news/footer_logo.svg";
+    img.src = "./../assets/news/footer_logo.svg";
     img.alt = "Main_logo";
-    img.srcset = "/assets/news/footer_logo.svg";
+    img.srcset = "./../assets/news/footer_logo.svg";
     img.className = "loader_anm";
 
     // Create an h1 element
