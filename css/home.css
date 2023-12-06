@@ -176,6 +176,29 @@
     font-weight: 600;
 }
 
+.department_container {
+    width: 100%;
+    min-height: 100vh !important;
+    background-color: var(--light) !important;
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    border-top: 5px solid var(--shade2);
+}
+
+.department_container h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.department_container span {
+    color: var(--shade2);
+    font-weight: 600;
+}
+
 
 /* .research_container>p {
     font-size: 0.8rem;
@@ -186,7 +209,8 @@
 
 } */
 
-.research_container .content {
+.research_container .content,
+.department_container .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,31 +218,37 @@
 }
 
 @media screen and (max-width:1300px) {
-    .research_container {
+    .research_container,
+    .department_container {
         height: auto;
         overflow: hidden;
         width: 100% !important;
     }
-    .research_container h1 {
+    .research_container h1,
+    .department_container h1 {
         font-size: 3rem;
         margin-bottom: 0;
         text-align: center;
     }
-    .research_container p {
+    .research_container p,
+    .department_container p {
         text-align: center;
     }
-    .research_container .content {
+    .research_container .content,
+    .department_container .content {
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .research_container .content .research_card {
+    .research_container .content .research_card,
+    .department_container .content .research_card {
         padding: 10px;
         margin: 5px 5px;
     }
 }
 
-.research_container .content .research_card {
+.research_container .content .research_card,
+.department_container .content .research_card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,17 +257,20 @@
     margin: 10px 20px;
 }
 
-.research_container .content .research_card img {
+.research_container .content .research_card img,
+.department_container .content .research_card img {
     height: 150px;
     width: auto;
 }
 
-.research_container .content .research_card span {
+.research_container .content .research_card span,
+.department_container .content .research_card span {
     font-size: 4rem;
     text-align: center;
     font-weight: 600;
 }
 
-.research_container .content .research_card p {
+.research_container .content .research_card p,
+.department_container .content .research_card p {
     font-size: 1.2rem;
 }

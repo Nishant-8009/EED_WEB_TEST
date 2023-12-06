@@ -31,21 +31,22 @@
 </head>
 
 <body>
+    <!-- Navbar Start -->
     <div id="navbarCustom" class="bg-white w-100 m-0 top-0" style="z-index: 999">
         <div class="container-fluid p-0 bg-nav">
             <div class="row d-flex align-items-center mx-lg-3 mx-2" style="justify-content: space-between">
                 <div class="col-12 col-lg-3 p-0">
-                    <div class="display-3 fw-bold py-2 text-center text-lg-center">
+                    <div class="display-3 fw-bold p-0 text-center text-lg-center">
                         <a href="https://iitrpr.ac.in/" target="_blank">
-                            <img src="./../assets/iitr-banner.png" alt="logo" class="logo_img">
+                            <img src="./../assets/new_logo.png" alt="logo" class="logo_img">
                         </a>
                     </div>
                     <hr class="d-block d-lg-none">
                 </div>
                 <div class="col-12 col-lg-3 p-0">
-                    <div class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0">
-                        <div class="pt-2">+91-1881-232202</div>
-                        <div>eeoffice@iitrpr.ac.in</div>
+                    <div class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center">
+                        <!-- <div class="pt-2">+91-1881-232202</div>
+                        <div>eeoffice@iitrpr.ac.in</div> -->
                         <div class="pb-2">
                             <div class>
                                 <div id="google_translate_element"></div>
@@ -74,7 +75,7 @@
                         <ul class="navbar-nav text-uppercase ps-2">
                             <!-- Main Links -->
                             <li class="nav-item">
-                                <a class="nav-link" href="/pages/home.html">Home</a>
+                                <a class="nav-link active pe-3 fw-bold" href="/pages/home.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/pages/about.html">About</a>
@@ -85,9 +86,9 @@
                                         People
                                     </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/faculty">Faculty</a>
-                                    <a class="dropdown-item" href="/staff">Staff</a>
-                                    <a class="dropdown-item" href="/students">Students</a>
+                                    <a class="dropdown-item" href="#">Faculty</a>
+                                    <a class="dropdown-item" href="#">Staff</a>
+                                    <a class="dropdown-item" href="#">Students</a>
                                 </div>
                             </li>
                             <!-- Courses Dropdown -->
@@ -97,17 +98,17 @@
                                     </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a class="dropdown-item" href="/courses/btech">Btech</a>
+                                        <a class="dropdown-item" href="#">Btech</a>
                                     </li>
                                     <li></li>
                                     <li>
-                                        <a class="dropdown-item" href="/courses/mtech">Mtech</a>
+                                        <a class="dropdown-item" href="#">Mtech</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/courses/phd">Phd</a>
+                                        <a class="dropdown-item" href="#">Phd</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/courses/msc">Msc</a>
+                                        <a class="dropdown-item" href="#">Msc</a>
                                     </li>
                                 </ul>
                             </li>
@@ -117,15 +118,15 @@
                                         Research
                                     </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/research/areas">Areas</a>
+                                    <a class="dropdown-item" href="#">Areas</a>
                                     <a class="dropdown-item" href="/research/facility">
                                             Facility
                                         </a>
-                                    <a class="dropdown-item" href="/research/labs">Labs</a>
-                                    <a class="dropdown-item" href="/research/publications">
+                                    <a class="dropdown-item" href="#">Labs</a>
+                                    <a class="dropdown-item" href="#">
                                             Publications
                                         </a>
-                                    <a class="dropdown-item" href="/research/projects">
+                                    <a class="dropdown-item" href="#">
                                             Projects
                                         </a>
                                 </div>
@@ -135,29 +136,21 @@
                                 <a class="nav-link" href="/pages/addmissions.html">Admissions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/achievements">Achievements</a>
+                                <a class="nav-link" href="#">Achievements</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/committee">Committee</a>
+                                <a class="nav-link" href="/pages/committe.html">Committee</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/pages/contact.html">Contact</a>
                             </li>
                         </ul>
-                        <div class="text-white m-1 p-3">
-                            <a
-                            class="btn getBtn rounded-0 hover-btn btn41-43 btn-41"
-                            style="z-index: 0"
-                            href="/pages/login.html"
-                          >
-                            Login
-                          </a>
-                        </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+    <!-- Navbar End -->
     <div class="swiper-container swiper mySwiper" style="height: 100vh;">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
@@ -231,7 +224,7 @@
             </a>
     </div>
     <!-- Research Highlights -->
-    <div class="research_container border-bottom1">
+    <div class="research_container">
         <h1>
             Research
             <span>Highlights</span>
@@ -265,6 +258,84 @@
                 Read More
             </a>
     </div>
+    <!-- Department Highlights -->
+    <div class="department_container">
+        <h1>
+            Department
+            <span>Highlights</span>
+        </h1>
+        <br>
+        <p class="text-center text-secondary fw-bold">
+            <small>
+                    The following are some of the Department Highlights - 
+                </small>
+        </p>
+        <div class="content" id="research_highlight_content">
+            <div class="research_card">
+                <img src="./../assets/calendar.png" alt width="50%">
+                <span class="count_custom">15</span>
+                <p class="text-center">Years of Service</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/faculty_members.png" alt width="50%">
+                <span class="count_custom">20</span>
+                <p class="text-center">Faculty Members</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/students.png" alt width="50%">
+                <span class="count_custom">1200</span>
+                <p class="text-center">Students</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/book-open-icon.png" alt width="50%">
+                <span class="count_custom">25</span>
+                <p class="text-center">Courses Offered</p>
+            </div>
+        </div>
+        <a href="#" class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41">
+                Read More
+            </a>
+    </div>
+    <!-- Department Highlights End -->
+    <!-- Placement Highlights -->
+    <div class="research_container border-bottom1">
+        <h1>
+            Placement
+            <span>Highlights</span>
+        </h1>
+        <br>
+        <p class="text-center text-secondary fw-bold">
+            <small>
+                    The following are some of the Placement Highlights - 
+                </small>
+        </p>
+        <div class="content" id="research_highlight_content">
+            <div class="research_card">
+                <img src="./../assets/placements_1.png" alt width="50%">
+                <span class="count_custom">90</span>
+                <p class="text-center">Placements (% of total)</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/cros_funding.png" alt width="50%">
+                <span class="count_custom">85</span>
+                <p class="text-center">Highest Package (in Lakhs)</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/average_package.png" alt width="50%">
+                <span class="count_custom">20</span>
+                <p class="text-center">Average Package (in Lakhs)</p>
+            </div>
+            <div class="research_card">
+                <img src="./../assets/projects.png" alt width="50%">
+                <span class="count_custom">30</span>
+                <p class="text-center">Research and Higher Studies</p>
+            </div>
+        </div>
+        <a href="#" class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41">
+                Read More
+            </a>
+    </div>
+    <!-- Placement Highlights End -->
     <!-- Our Achievements -->
     <div class="p-5 border-bottom1 d-flex justify-content-start align-items-start flex-column bg3">
         <h1 class="h1 main_head">
@@ -445,7 +516,7 @@
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <img src="./../assets/news/logo_full.jpg" alt="logo_iitrpr" style="width: auto; background-color: #fff; height: 200px;" class="rounded-2 p-1" />
+                        <img src="./../assets/news/logo_full.jpg" alt="logo_iitrpr" style="width: 200px; background-color: #fff; height:auto;" class="rounded-2 p-1" />
                         <h6 class="text-uppercase fw-bold h2 mt-4">Department of Electrical Engineering</h6>
                     </div>
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

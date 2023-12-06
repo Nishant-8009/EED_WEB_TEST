@@ -13,9 +13,7 @@ function customCount(element, count) {
     const delay = Math.round(time / count);
     let currentCount = 0;
     let intervalId = setInterval(() => {
-        console.log(currentCount);
         element.innerHTML = currentCount;
-
         if (currentCount === count) {
             clearInterval(intervalId);
         }

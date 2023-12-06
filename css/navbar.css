@@ -15,6 +15,7 @@
 
 .navbarBgDark {
     background: var(--dark);
+    padding: 20px 0;
 }
 
 .navbar-nav .nav-item .active {
@@ -48,13 +49,21 @@
     width: 24px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
     .sideLine {
         border-right: none;
     }
     .iconHeight {
         height: 46px;
         width: 46px;
+    }
+    .navbarBgDark {
+        padding: 0px 0;
+    }
+    .mobile_center {
+        align-items: start !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 }
 
@@ -84,7 +93,7 @@
 }
 
 .logo_img {
-    height: 4rem;
+    height: 5rem !important;
 }
 
 @media screen and (max-width:799px) {
