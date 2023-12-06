@@ -36,7 +36,7 @@
 }
 
 .getBtn {
-    color: var(--light);
+    color: var(--light) !important;
 }
 
 .sideLine {
@@ -118,6 +118,7 @@
 
 .getBtn:hover {
     color: var(--shade2) !important;
+    background-color: var(--light) !important;
 }
 
 

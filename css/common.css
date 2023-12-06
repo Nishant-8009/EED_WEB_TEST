@@ -79,7 +79,7 @@ select {
 /* Style the dropdown arrow */
 
 *::selection {
-    background-color: #000000 !important;
+    background-color: var(--shade2) !important;
     color: #ffffff !important;
 }
 
@@ -325,10 +325,13 @@ body {
 .btn-41 {
     border: none;
     z-index: 1;
-    color: var(--light);
+    color: var(--light) !important;
     outline: none;
     box-shadow: none;
     background: var(--shade2);
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
 }
 
 .btn-41:after {
@@ -357,4 +360,16 @@ body {
 
 .btn-41:active {
     top: 2px;
+}
+
+
+/* Checkboxes */
+
+.form-check-input {
+    background-color: var(--shade2) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    user-select: none !important;
+    cursor: pointer;
 }

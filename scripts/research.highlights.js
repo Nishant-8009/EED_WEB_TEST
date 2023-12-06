@@ -1,36 +1,24 @@
-// const ResearchHighlightData = [{
-//         title: "Publications (>90% are IEEE)",
-//         value: 510,
-//         illustration: "./../assets/publication.png",
-//     },
-//     {
-//         title: "Patents",
-//         value: 11,
-//         illustration: "./../assets/patents.png",
-//     },
-//     {
-//         title: "Cross Funding(INR)",
-//         value: 48,
-//         illustration: "./../assets/cros_funding.png",
-//     },
-//     {
-//         title: "Projects",
-//         value: 61,
-//         illustration: "./../assets/projects.png",
-//     },
-// ];
+// Settings of Count
+const time = 2000 // 2 seconds
 
+window.addEventListener('load', () => {
+    let elems = document.querySelectorAll('.count_custom');
+    elems.forEach((item, index) => {
+        let count = Number(item.innerHTML);
+        customCount(item, count);
+    });
+});
 
-// window.onload = function() {
-//     const research_highlights = () => {
-//         let elem = document.getElementById("research_highlight_content");
-//         ResearchHighlightData.forEach((item, i) => {
-//             elem.innerHTML += `
-//                 <div class="research_card">
-//                     <img src="${item.illustration}" alt="" width="50%" />
-//                     <span>${item.value}</span>
-//                 </div>`;
-//         });
-//     };
-//     research_highlights();
-// };
+function customCount(element, count) {
+    const delay = Math.round(time / count);
+    let currentCount = 0;
+    let intervalId = setInterval(() => {
+        console.log(currentCount);
+        element.innerHTML = currentCount;
+
+        if (currentCount === count) {
+            clearInterval(intervalId);
+        }
+        currentCount++;
+    }, delay);
+}

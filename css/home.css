@@ -116,11 +116,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--dark) !important;
 }
 
 .getBtn:hover {
     color: var(--shade2) !important;
+    background-color: var(--light) !important;
 }
 
 
