@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Department of Electrical Engineering</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.iitrpr.ac.in/sites/default/files/logo_0_1.png"
+      type="image/x-icon"
+    />
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" class="theme" href="./../css/theme.css" />
+    <link rel="stylesheet" href="./../css/common.css" />
+    <link rel="stylesheet" href="./../css/navbar.css" />
+    <link rel="stylesheet" href="./../css/courses.cssf" />
+
+    <link rel="stylesheet" href="./../css/slider.css" />
+    <link rel="stylesheet" href="./../css/home.css" />
+    <link rel="stylesheet" href="./../css/course.offered.css" />
+    <link rel="stylesheet" href="./../css/news.feed.css" />
+    <link rel="stylesheet" href="./../css/tabs.css" />
+    <link rel="stylesheet" href="./../css/loader.css" />
+    <!-- JS -->
+    <script src="./../scripts/footer.js"></script>
+    <script src="./../scripts/navbar.js"></script>
+    <script src="./../scripts/research.highlights.js"></script>
+  </head>
+
+  <body>
+    <style>
+        /* .course_card_head {
+    font-weight: 800 !important;
+    background-color: #00000043;
+    text-transform: uppercase;
+    border-bottom: 2px solid black !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+    border-top: 1px solid black !important;
+}
+
+.course_card_desc {
+    border-bottom: 5px solid black !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+} */
+    </style>
+    <div
+      id="navbarCustom"
+      class="bg-white w-100 m-0 top-0"
+      style="z-index: 999"
+    >
+      <div class="container-fluid p-0 bg-nav">
+        <div
+          class="row d-flex align-items-center mx-lg-3 mx-2"
+          style="justify-content: space-between"
+        >
+          <div class="col-12 col-lg-3 p-0">
+            <div class="display-3 fw-bold py-2 text-center text-lg-center">
+              <a href="https://iitrpr.ac.in/" target="_blank">
+                <img
+                  src="./../assets/iitr-banner.png"
+                  alt="logo"
+                  class="logo_img"
+                />
+              </a>
+            </div>
+            <hr class="d-block d-lg-none" />
+          </div>
+          <div class="col-12 col-lg-3 p-0">
+            <div
+              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0"
+            >
+              <div class="pt-2">+91-1881-232202</div>
+              <div>eeoffice@iitrpr.ac.in</div>
+              <div class="pb-2">
+                <div class>
+                  <div id="google_translate_element"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarBgDark" data-bs-theme="dark">
+          <nav
+            class="navbar navbar-expand-lg justify-content-center justify-content-lg-between p-0"
+          >
+            <button
+              class="shadow-none d-lg-none navbar-toggler m-3 w-100 text-white text-center"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="toggle-btn-custom"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+                border: none;
+              "
+            >
+              <span class="material-symbols-outlined">menu</span>
+              <span
+                class="h5 d-flex justify-content-center align-items-center pt-2"
+              >
+                Menu
+              </span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav text-uppercase ps-2">
+                <!-- Main Links -->
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/about.html">About</a>
+                </li>
+                <!-- People Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    People
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/faculty">Faculty</a>
+                    <a class="dropdown-item" href="/staff">Staff</a>
+                    <a class="dropdown-item" href="/students">Students</a>
+                  </div>
+                </li>
+                <!-- Courses Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="/courses/btech">Btech</a>
+                    </li>
+                    <li></li>
+                    <li>
+                      <a class="dropdown-item" href="/courses/mtech">Mtech</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/courses/phd">Phd</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/courses/msc">Msc</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Research Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Research
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/research/areas">Areas</a>
+                    <a class="dropdown-item" href="/research/facility">
+                      Facility
+                    </a>
+                    <a class="dropdown-item" href="/research/labs">Labs</a>
+                    <a class="dropdown-item" href="/research/publications">
+                      Publications
+                    </a>
+                    <a class="dropdown-item" href="/research/projects">
+                      Projects
+                    </a>
+                  </div>
+                </li>
+                <!-- Other Links -->
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/addmissions.html"
+                    >Admissions
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/achievements">Achievements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/committee">Committee</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="text-white m-1 p-3">
+                <button
+                  type="button"
+                  onClick
+                  class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41"
+                  style="z-index: 0"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Started  -->
+    <div class="row p-5 fade-in-custom">
+        <h1 class="h1 text-center main_head mb-5">
+          $courseName <br class="d-lg-none" />
+          <span>Courses</span>
+        </h1>
+        <div class="">
+          <label htmlFor="search" class="fw-bold h5">
+            Search a Course
+          </label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="w-100 rounded-2 form-control  p-3 mb-3"
+            style="box-shadow: none;"
+            placeholder="Search.."
+            oninput="setSearchValue(event.target.value)"
+          />
+        </div>
+        <div class="w-full">
+              <div id="notFoundMessage" class="alert alert-danger mt-4 fade-in-custom" role="alert" style="display: none;">
+                Not items matched with
+                <span id="searchValue" class="text-red fw-bold mx-2"></span>
+              </div>
+              <table
+          class="table table-bordered table-striped  table-hover mt-0"
+          id="courses_table"
+        >
+          <thead>
+            <tr
+              class="bg-dark text-white fw-bold"
+              style="border: 1px solid #000;"
+            >
+              <th class="heading h4">Code</th>
+              <th class="heading h4">Title</th>
+              <th class="heading h4">L-T-P-S-C</th>
+              <th class="heading h4 text-end"></th> <!--if logged in-->
+            </tr>
+          </thead>
+          <tbody id="courses_table_body">
+
+        </tbody>
+    </table>
+  </div>
+</div>
+    <!--  Ended -->
+    <!-- Footer Started -->
+    <footer
+      class="text-center text-lg-start text-white h-100vh d-flex justify-content-between align-items-stretch flex-column"
+      style="background-color: var(--dark)"
+    >
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: var(--shade2)"
+      >
+        <div class="me-5">
+          <span class="fw-bold">Get connected on social networks</span>
+        </div>
+        <div>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-instagram"> </i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-linkedin"> </i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class>
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <img
+                src="./../assets/news/logo_full.jpg"
+                alt="logo_iitrpr"
+                style="width: auto; background-color: #fff; height: 200px"
+                class="rounded-2 p-1"
+              />
+              <h6 class="text-uppercase fw-bold h2 mt-4">
+                Department of Electrical Engineering
+              </h6>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6
+                class="text-uppercase fw-bold underline mb-3"
+                style="color: var(--shade2)"
+              >
+                Quick Links
+              </h6>
+              <!-- Quick Links rendering here -->
+              <p>
+                <a href="#" class="text-white underline-hover"
+                  >Classroom Booking
+                </a>
+              </p>
+              <p>
+                <a href="#" class="text-white underline-hover"
+                  >Download Forms
+                </a>
+              </p>
+              <!-- Add more Quick Links -->
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6
+                class="text-uppercase fw-bold underline mb-3"
+                style="color: var(--shade2)"
+              >
+                Opportunities
+              </h6>
+              <!-- Opportunities rendering here -->
+              <p>
+                <a href="#" class="text-white underline-hover"
+                  >Faculty Positions
+                </a>
+              </p>
+              <p>
+                <a href="#" class="text-white underline-hover"
+                  >Ph.D. Positions
+                </a>
+              </p>
+              <!-- Add more Opportunities -->
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6
+                class="text-uppercase fw-bold underline mb-3"
+                style="color: var(--shade2)"
+              >
+                Other Links
+              </h6>
+              <!-- Other Links rendering here -->
+              <p>
+                <a href="#" class="text-white underline-hover">Deans</a>
+              </p>
+              <p>
+                <a href="#" class="text-white underline-hover"
+                  >Associate Deans
+                </a>
+              </p>
+              <!-- Add more Other Links -->
+              <!-- Uncomment the following line if needed -->
+              <!-- <p><a href="/login" class="text-white underline-hover">Administrative Login</a></p> -->
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6
+                class="text-uppercase fw-bold h3 mb-3"
+                style="color: var(--shade2)"
+              >
+                Contact Us
+              </h6>
+              <p>
+                <i class="fas fa-home mr-5"></i> EE-Office, Department of
+                Electrical Engineering, J.C.Block, IIT Ropar, Rupnagar, Punjab,
+                140001
+              </p>
+              <p><i class="fas fa-envelope mr-5"></i> eeoffice@iitrpr.ac.in</p>
+              <p><i class="fas fa-phone mr-5"></i> +91-1881-232202</p>
+              <p><i class="fas fa-print mr-5"></i> NA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <!-- Replace "path_to_your_gmap" with your Google Maps URL -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d54733.46517815982!2d76.503119!3d30.974903!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3905543310e70e63%3A0x63397d7938035537!2sRupnagar%20Old%20Bus%20Stand%2C%20Chhota%20Khera%2C%20Basant%20Nagar%2C%20Rupnagar%2C%20Punjab%20140001!3m2!1d30.966969499999998!2d76.5338166!4m5!1s0x390554d4ffffffff%3A0xb81f1e2708c91100!2sIndian%20institute%20of%20Technology%20Ropar%2C%20Bara%20Phool%2C%20Punjab%20140001!3m2!1d30.970918299999997!2d76.4731998!5e0!3m2!1sen!2sin!4v1625103532953!5m2!1sen!2sin"
+          width="100%"
+          height="400px"
+          style="border: none"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div
+        class="container text-center pb-4"
+        style="background-color: var(--dark); color: var(--light)"
+      >
+        <hr />
+        <div class="d-flex justify-content-between align-items-center">
+          <div id="current_datetime" class="fw-bold"></div>
+          <div>
+            <!-- Replace the placeholder text with your copyright information -->
+            Copyright © 2023 IIT Ropar. Designed & Developed by
+            <a
+              href="https://www.linkedin.com/"
+              class="text-white underline-hover"
+              >CVPR Lab
+            </a>
+          </div>
+          <div class="ml-5">Last Updated - 04-09-2023</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ended -->
+    <!-- Loader Module -->
+    <script src="./../scripts/loader.js"></script>
+    <script>
+        let search = "";
+        const courses = [
+  {
+    userid: 1,
+    code: 'CS101',
+    title: 'Introduction to Computer Science',
+    description: 'An introductory course covering the basics of computer science.',
+    ltpsc: '3-1-0-3-4', // Replace with actual values
+  },
+  {
+    userid: 2,
+    code: 'MATH201',
+    title: 'Calculus I',
+    description: 'A foundational course in calculus for mathematics majors.',
+    ltpsc: '3-1-0-4-4', // Replace with actual values
+  },
+  // Add more courses as needed
+];
+        function setSearchValue(value) {
+        search = value;
+        updateTable();
+        }
+        function updateTable() {
+        const tableBody = document.getElementById("courses_table_body");
+        const notFoundMessageElement = document.getElementById("notFoundMessage");
+        const searchText = document.getElementById("searchValue");
+
+
+
+        // Remove existing rows
+        tableBody.innerHTML = "";
+
+        // Filter and add new rows
+          
+            
+          const matchesSearch =courses.filter( course=>
+            course.title.toLowerCase().includes(search.toLowerCase().trim()) ||
+            course.code.toLowerCase().includes(search.toLowerCase().trim()) ||
+            course.ltpsc.toLowerCase().includes(search.toLowerCase().trim()) ||
+            course.description.toLowerCase().includes(search.toLowerCase().trim()));
+
+
+            if (matchesSearch.length === 0) {
+      notFoundMessageElement.style.display = "block";
+      searchText.innerText = `"${search}"`;
+    } else {
+      notFoundMessageElement.style.display = "none";
+    }
+    tableBody.innerHTML = matchesSearch.map((item, i) =>
+    `
+    <tr class="course_card_head course_row courses_rows">
+        <td class="border-0">${item.code}</td>
+        <td class="border-0">${item.title}</td>
+        <td class="text-danger border-0">${item.ltpsc}</td>
+        <!--                                                 if  LOGGED IN THEN ONLY    START              -->
+        <td class="text-danger border-0 text-end">
+            <div class="dropdown">
+              <button
+                class="btn btn-danger text-white dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                <!--disabled if not logged in-->
+              
+                Action
+              </button>
+
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item text-info diabled"
+                    style="cursor:not-allowed;"
+                    
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i> Edit
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item text-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#DeletePublicationModel"
+                    
+                  >
+                    
+                    <i class="fa-solid fa-trash-can"></i> Delete
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </td>
+          <!--                                                 if  LOGGED IN THEN ONLY    END              -->
+        </tr>
+        <tr class="text-muted course_card_desc courses_rows">
+        <td colspan="4">${item.description}</td>
+      </tr>
+    `
+    ).join('');
+    }
+    updateTable();
+
+    </script>
+  </body>
+</html>
