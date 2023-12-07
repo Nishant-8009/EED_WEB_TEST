@@ -369,7 +369,7 @@ body {
     background-color: var(--shade2) !important;
     box-shadow: none !important;
     border: none !important;
-    border-radius: 0 !important;
+    /* border-radius: 0 !important; */
     user-select: none !important;
     cursor: pointer;
 }
