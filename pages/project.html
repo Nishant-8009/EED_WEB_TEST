@@ -46,6 +46,7 @@
   </head>
 
   <body>
+    <!-- Navbar Started -->
     <div
       id="navbarCustom"
       class="bg-white w-100 m-0 top-0"
@@ -57,10 +58,10 @@
           style="justify-content: space-between"
         >
           <div class="col-12 col-lg-3 p-0">
-            <div class="display-3 fw-bold py-2 text-center text-lg-center">
+            <div class="display-3 fw-bold p-0 text-center text-lg-center">
               <a href="https://iitrpr.ac.in/" target="_blank">
                 <img
-                  src="./../assets/iitr-banner.png"
+                  src="./../assets/new_logo.png"
                   alt="logo"
                   class="logo_img"
                 />
@@ -70,10 +71,10 @@
           </div>
           <div class="col-12 col-lg-3 p-0">
             <div
-              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0"
+              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
             >
-              <div class="pt-2">+91-1881-232202</div>
-              <div>eeoffice@iitrpr.ac.in</div>
+              <!-- <div class="pt-2">+91-1881-232202</div>
+                          <div>eeoffice@iitrpr.ac.in</div> -->
               <div class="pb-2">
                 <div class>
                   <div id="google_translate_element"></div>
@@ -117,7 +118,11 @@
               <ul class="navbar-nav text-uppercase ps-2">
                 <!-- Main Links -->
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/home.html">Home</a>
+                  <a
+                    class="nav-link active pe-3 fw-bold"
+                    href="/pages/home.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
@@ -135,9 +140,9 @@
                     People
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/faculty">Faculty</a>
-                    <a class="dropdown-item" href="/staff">Staff</a>
-                    <a class="dropdown-item" href="/students">Students</a>
+                    <a class="dropdown-item" href="#">Faculty</a>
+                    <a class="dropdown-item" href="#">Staff</a>
+                    <a class="dropdown-item" href="#">Students</a>
                   </div>
                 </li>
                 <!-- Courses Dropdown -->
@@ -154,17 +159,21 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="/courses/btech">Btech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Btech</a
+                      >
                     </li>
                     <li></li>
                     <li>
-                      <a class="dropdown-item" href="/courses/mtech">Mtech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Mtech</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/phd">Phd</a>
+                      <a class="dropdown-item" href="/pages/course.html">Phd</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/msc">Msc</a>
+                      <a class="dropdown-item" href="/pages/course.html">Msc</a>
                     </li>
                   </ul>
                 </li>
@@ -181,15 +190,15 @@
                     Research
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/research/areas">Areas</a>
-                    <a class="dropdown-item" href="/research/facility">
+                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
+                    <a class="dropdown-item" href="/pages/facilities.html">
                       Facility
                     </a>
-                    <a class="dropdown-item" href="/research/labs">Labs</a>
-                    <a class="dropdown-item" href="/research/publications">
+                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
+                    <a class="dropdown-item" href="/pages/publications.html">
                       Publications
                     </a>
-                    <a class="dropdown-item" href="/research/projects">
+                    <a class="dropdown-item" href="/pages/project.html">
                       Projects
                     </a>
                   </div>
@@ -197,102 +206,94 @@
                 <!-- Other Links -->
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/addmissions.html"
-                    >Admissions
-                  </a>
+                    >Admissions</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/achievements">Achievements</a>
+                  <a class="nav-link" href="/pages/achievements.html"
+                    >Achievements</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/committee">Committee</a>
+                  <a class="nav-link" href="/pages/committe.html">Committee</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/contact.html">Contact</a>
                 </li>
               </ul>
-              <div class="text-white m-1 p-3">
-                <button
-                  type="button"
-                  onClick
-                  class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41"
-                  style="z-index: 0"
-                >
-                  Login
-                </button>
-              </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
+    <!-- Navbar Ended -->
     <!-- Started  -->
-    <div class="w-100 d-flex justify-content-center align-items-center flex-column  py-5">
-        <h1 class="text-center main_head mb-5">
-          Research <span> Projects</span>
-        </h1>
-        <div class="container">
-            <table class="table table-bordered table-hover table-responsive table-striped">
-              <thead>
-                <tr class="table-dark">
-                  <td>Sr. No. </td>
-                  <td>Project Title</td>
-                  <td>Funding Agency</td>
-                  <td>Accociated Faculty</td>
-                  <td>Action</td> <!--if auth(logged in) is successful -->
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td class="fw-bold">title</td>
-                    <td>funding_agency</td>
-                    <td><a href="#prfilelink">Associated Faculty</a></td><!-- Link to my profile if logged in else link to faculty portfolio -->
-                    <!--if logged in then below column-->
-                    <td>
-                        <div class="dropdown">
-                             <!--button diabled if not logged in-->
-                            <button                                                
-                              class="btn btn-danger text-white dropdown-toggle"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                              
-                            >
-                              Action
-                            </button>
-  
-                            <ul
-                              class="dropdown-menu"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="dropdown-item text-info disabled"
-                                >
-                                  <i class="fa-solid fa-pen-to-square"></i>
-                                  Edit
-                              </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="dropdown-item text-danger"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#DeletePublicationModel"
-                                  
-                                >
-                                  
-                                  <i class="fa-solid fa-trash-can"></i> Delete
-                              </a>
-                              </li>
-                            </ul>
-                          </div>
-  
-                    </td>
-                </tr>
-            </tbody>
+    <div
+      class="w-100 d-flex justify-content-center align-items-center flex-column py-5"
+    >
+      <h1 class="text-center main_head mb-5">
+        Research <span> Projects</span>
+      </h1>
+      <div class="container">
+        <table
+          class="table table-bordered table-hover table-responsive table-striped"
+        >
+          <thead>
+            <tr class="table-dark">
+              <td>Sr. No.</td>
+              <td>Project Title</td>
+              <td>Funding Agency</td>
+              <td>Accociated Faculty</td>
+              <td>Action</td>
+              <!--if auth(logged in) is successful -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="fw-bold">title</td>
+              <td>funding_agency</td>
+              <td><a href="#prfilelink">Associated Faculty</a></td>
+              <!-- Link to my profile if logged in else link to faculty portfolio -->
+              <!--if logged in then below column-->
+              <td>
+                <div class="dropdown">
+                  <!--button diabled if not logged in-->
+                  <button
+                    class="btn btn-danger text-white dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a href="#" class="dropdown-item text-info disabled">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#DeletePublicationModel"
+                      >
+                        <i class="fa-solid fa-trash-can"></i> Delete
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

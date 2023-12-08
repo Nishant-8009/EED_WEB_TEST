@@ -46,6 +46,7 @@
   </head>
 
   <body>
+    <!-- Navbar Started -->
     <div
       id="navbarCustom"
       class="bg-white w-100 m-0 top-0"
@@ -57,10 +58,10 @@
           style="justify-content: space-between"
         >
           <div class="col-12 col-lg-3 p-0">
-            <div class="display-3 fw-bold py-2 text-center text-lg-center">
+            <div class="display-3 fw-bold p-0 text-center text-lg-center">
               <a href="https://iitrpr.ac.in/" target="_blank">
                 <img
-                  src="./../assets/iitr-banner.png"
+                  src="./../assets/new_logo.png"
                   alt="logo"
                   class="logo_img"
                 />
@@ -70,10 +71,10 @@
           </div>
           <div class="col-12 col-lg-3 p-0">
             <div
-              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0"
+              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
             >
-              <div class="pt-2">+91-1881-232202</div>
-              <div>eeoffice@iitrpr.ac.in</div>
+              <!-- <div class="pt-2">+91-1881-232202</div>
+                          <div>eeoffice@iitrpr.ac.in</div> -->
               <div class="pb-2">
                 <div class>
                   <div id="google_translate_element"></div>
@@ -117,7 +118,11 @@
               <ul class="navbar-nav text-uppercase ps-2">
                 <!-- Main Links -->
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/home.html">Home</a>
+                  <a
+                    class="nav-link active pe-3 fw-bold"
+                    href="/pages/home.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
@@ -135,9 +140,9 @@
                     People
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/faculty">Faculty</a>
-                    <a class="dropdown-item" href="/staff">Staff</a>
-                    <a class="dropdown-item" href="/students">Students</a>
+                    <a class="dropdown-item" href="#">Faculty</a>
+                    <a class="dropdown-item" href="#">Staff</a>
+                    <a class="dropdown-item" href="#">Students</a>
                   </div>
                 </li>
                 <!-- Courses Dropdown -->
@@ -154,17 +159,21 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="/courses/btech">Btech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Btech</a
+                      >
                     </li>
                     <li></li>
                     <li>
-                      <a class="dropdown-item" href="/courses/mtech">Mtech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Mtech</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/phd">Phd</a>
+                      <a class="dropdown-item" href="/pages/course.html">Phd</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/msc">Msc</a>
+                      <a class="dropdown-item" href="/pages/course.html">Msc</a>
                     </li>
                   </ul>
                 </li>
@@ -181,15 +190,15 @@
                     Research
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/research/areas">Areas</a>
-                    <a class="dropdown-item" href="/research/facility">
+                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
+                    <a class="dropdown-item" href="/pages/facilities.html">
                       Facility
                     </a>
-                    <a class="dropdown-item" href="/research/labs">Labs</a>
-                    <a class="dropdown-item" href="/research/publications">
+                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
+                    <a class="dropdown-item" href="/pages/publications.html">
                       Publications
                     </a>
-                    <a class="dropdown-item" href="/research/projects">
+                    <a class="dropdown-item" href="/pages/project.html">
                       Projects
                     </a>
                   </div>
@@ -197,91 +206,88 @@
                 <!-- Other Links -->
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/addmissions.html"
-                    >Admissions
-                  </a>
+                    >Admissions</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/achievements">Achievements</a>
+                  <a class="nav-link" href="/pages/achievements.html"
+                    >Achievements</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/committee">Committee</a>
+                  <a class="nav-link" href="/pages/committe.html">Committee</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/contact.html">Contact</a>
                 </li>
               </ul>
-              <div class="text-white m-1 p-3">
-                <button
-                  type="button"
-                  onClick
-                  class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41"
-                  style="z-index: 0"
-                >
-                  Login
-                </button>
-              </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
+    <!-- Navbar Ended -->
     <!-- Started  -->
-    <div class="w-100 d-flex justify-content-center align-items-center flex-column  py-5">
-        <h1 class="text-center main_head mb-5">
-          Research <span> Laboratories</span>
-        </h1>
-        <div class="bg-dark p-3 rounded-4 position-sticky top-0 mb-5">
-          <ul class="nav nav-pills nav-fill" id="tabs">
-            
-            </ul>
-        </div>
+    <div
+      class="w-100 d-flex justify-content-center align-items-center flex-column py-5"
+    >
+      <h1 class="text-center main_head mb-5">
+        Research <span> Laboratories</span>
+      </h1>
+      <div class="bg-dark p-3 rounded-4 position-sticky top-0 mb-5">
+        <ul class="nav nav-pills nav-fill" id="tabs"></ul>
+      </div>
     </div>
-        <div class="tab-content" id="myTabContent">
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="first"
+        role="tabpanel"
+        aria-labelledby="first-tab"
+      >
+        <div class="container">
+          <h4 class="fw-bold mb-4">
+            <h2 class="fw-bold h3 fade-in-custom" id="labName"></h2>
+          </h4>
+          <div class="my-3 fade-in-custom">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="w-100 rounded-2 form-control p-3"
+              style="box-shadow: none"
+              oninput="setSearchValue(event.target.value)"
+              placeholder="Search for Lab"
+            />
             <div
-              class="tab-pane fade show active"
-              id="first"
-              role="tabpanel"
-              aria-labelledby="first-tab"
+              id="notFoundMessage"
+              class="alert alert-danger mt-4 fade-in-custom"
+              role="alert"
+              style="display: none"
             >
-            <div class="container">
-                <h4 class="fw-bold mb-4">
-                  <h2 class="fw-bold h3 fade-in-custom" id="labName"></h2>
-                </h4>
-                <div class="my-3 fade-in-custom">
-                  <input
-                    type="text"
-                    name="search"
-                    id="search"
-                    class="w-100 rounded-2 form-control p-3"
-                    style="box-shadow: none;"
-                    oninput="setSearchValue(event.target.value)"
-                    placeholder="Search for Lab"
-                  />
-                  <div id="notFoundMessage" class="alert alert-danger mt-4 fade-in-custom" role="alert" style="display: none;">
-                    Not items matched with
-                    <span id="searchValue" class="text-red fw-bold mx-2"></span>
-                  </div>
-                </div>
-                <div class="container overflow-auto p-0 fade-in-custom">
-                  <table
-                    class="table table-bordered table-hover table-responsive table-striped mb-4"
-                    id="labsTable"
-                  >
-                    <thead>
-                      <tr class="table-dark">
-                        <td>Sr. No. </td>
-                        <td>Lab Name </td>
-                        <td>Location</td>
-                        <td>Associated Faculty</td>
-                      </tr>
-                    </thead>
-                    <tbody id="labsBody"></tbody>
-                  </table>
-                </div>
-              </div>
+              Not items matched with
+              <span id="searchValue" class="text-red fw-bold mx-2"></span>
             </div>
+          </div>
+          <div class="container overflow-auto p-0 fade-in-custom">
+            <table
+              class="table table-bordered table-hover table-responsive table-striped mb-4"
+              id="labsTable"
+            >
+              <thead>
+                <tr class="table-dark">
+                  <td>Sr. No.</td>
+                  <td>Lab Name</td>
+                  <td>Location</td>
+                  <td>Associated Faculty</td>
+                </tr>
+              </thead>
+              <tbody id="labsBody"></tbody>
+            </table>
+          </div>
         </div>
-    
+      </div>
+    </div>
 
     <!--  Ended -->
     <!-- Footer Started -->
@@ -445,223 +451,232 @@
     <script src="./../scripts/loader.js"></script>
     <script>
       const LabsNames = [
-  "Power Engineering",
-  "Signal Processing & Communication",
-  "Microelectronics and VLSI Design",
-];
-        let active=0;
-        let searchValue = "";
-        let notfound = false;
-        function handleTabChange(index) {
-            active = index;
-            renderTabs();
-            renderTable();
-            }
-            function setSearchValue(value) {
-          searchValue = value;
-          renderTable();
+        "Power Engineering",
+        "Signal Processing & Communication",
+        "Microelectronics and VLSI Design",
+      ];
+      let active = 0;
+      let searchValue = "";
+      let notfound = false;
+      function handleTabChange(index) {
+        active = index;
+        renderTabs();
+        renderTable();
+      }
+      function setSearchValue(value) {
+        searchValue = value;
+        renderTable();
+      }
+      const labs = {
+        0: [
+          {
+            id: 1,
+            name: "Electric Machines (UG)",
+            location: "Room No. : 101, Ground Floor",
+            associatedFaculty: "Dr. Saifullah Payami",
+          },
+          {
+            id: 2,
+            name: "High Voltage (PG)",
+            location: "Room No. : 102, Ground Floor",
+            associatedFaculty: "Dr. C.C. Reddy",
+          },
+          {
+            id: 3,
+            name: "Power Electronics (UG+ PG)",
+            location: "Room No. : 104, Ground Floor",
+            associatedFaculty: "Dr. R Sekhar",
+          },
+          {
+            id: 4,
+            name: "Drives Lab",
+            location: "Room No. : 106, Ground Floor",
+            associatedFaculty: "TBA",
+          },
+          {
+            id: 5,
+            name: "Controls + Instrumentation (UG)",
+            location: "Room No. : 202, First Floor",
+            associatedFaculty: "Dr. Sanjay Roy",
+          },
+          {
+            id: 6,
+            name: "Power Systems (UG + PG)",
+            location: "Room No. : 203, First Floor",
+            associatedFaculty: "Dr. Ranjna Sohi, Dr. Bibhu",
+          },
+          {
+            id: 7,
+            name: "SYnchrophasor Measurement And Research (SYMAR) Lab",
+            location: "Room No. : 205, First Floor",
+            associatedFaculty: "Dr. Ranjna Sodhi",
+          },
+          {
+            id: 8,
+            name: "Dielectric Measurement Lab",
+            location: "Room No. : 406, Third Floor",
+            associatedFaculty: "Dr. C.C. Reddy",
+          },
+          {
+            id: 9,
+            name: "GEL Lab",
+            location: "Room No. : 409, Third Floor",
+            associatedFaculty: "Dr. Saifullah Pyami",
+          },
+        ],
+        1: [
+          {
+            id: 1,
+            name: "Embedded System Lab",
+            location: "Room No. : 206, First Floor",
+            associatedFaculty: "Dr. J.S. Sahambi",
+          },
+          {
+            id: 2,
+            name: "Infra Red Imaging Lab",
+            location: "Room No. : 207, First Floor",
+            associatedFaculty: "Dr. Ravibabu",
+          },
+          {
+            id: 3,
+            name: "Communication Engg. Lab (UG + PG)",
+            location: "Room No. : 301, Second Floor",
+            associatedFaculty: "Dr. Suman Kumar",
+          },
+          {
+            id: 4,
+            name: "Electromagnetics Lab (UG)",
+            location: "Room No. : 303, Second Floor",
+            associatedFaculty:
+              "Dr. Ashwani Sharma, Dr. Vinayak Hande, Dr. Devarshi Das, Dr. M. Sakre",
+          },
+          {
+            id: 5,
+            name: "Antenna/ MW Lab",
+            location: "Room No. : 304, Second Floor",
+            associatedFaculty: "Dr. Ashwani Sharma",
+          },
+          {
+            id: 6,
+            name: "Computer Vision and Pattern Recognition Lab",
+            location: "Room No. : 405, Third Floor",
+            associatedFaculty:
+              "Dr. Subrahmanyam Murala, Dr. Santosh K Vipparthi",
+          },
+          {
+            id: 7,
+            name: "Communication Research Lab",
+            location: "Room No. : 407, Third Floor",
+            associatedFaculty:
+              "Dr. Suman Kumar, Dr. Sam Darshi, Dr. Brajesh Kumbhani, Dr. Satyam Aggarwal",
+          },
+        ],
+        2: [
+          {
+            id: 1,
+            name: "Analog + Digital (UG)",
+            location: "Room No. : 201, First Floor",
+            associatedFaculty: "Dr. Mahendra Sakare",
+          },
+          {
+            id: 2,
+            name: "VLSI Lab",
+            location: "Room No. : 302, Second Floor",
+            associatedFaculty:
+              "Dr. Rohit Sharma, Dr. Devarshi Das, Dr. Mahendra Sakare",
+          },
+          {
+            id: 3,
+            name: "VLSI Wet Lab",
+            location: "Room No. : 401, Third Floor",
+            associatedFaculty:
+              "Dr. Rohit Sharma, Dr. Devarshi Das, Dr. Mahendra Sakare",
+          },
+          {
+            id: 4,
+            name: "VLSI Characterization Lab",
+            location: "Room No. : 403, Third Floor",
+            associatedFaculty: "Dr. Pardeep Duhan, Dr. Abhishek Sharma",
+          },
+          {
+            id: 5,
+            name: "Product Eng. Lab",
+            location: "Room No. : 404, Third Floor",
+            associatedFaculty: "Dr. Brajesh Rawat",
+          },
+          {
+            id: 6,
+            name: "BEL Lab",
+            location: "Room No. : 408, Third Floor",
+            associatedFaculty: "Dr. Mahendra Sakare",
+          },
+        ],
+      };
+
+      function renderTabs() {
+        const tabsElement = document.getElementById("tabs");
+        tabsElement.innerHTML = "";
+
+        LabsNames.forEach((data, i) => {
+          const li = document.createElement("li");
+          li.className = "nav-item";
+
+          const span = document.createElement("span");
+          span.className = `nav-link ${active === i ? "active" : ""}`;
+          span.textContent = `${data} ${
+            active === i ? `(${labs[active].length})` : ""
+          }`;
+          span.addEventListener("click", () => handleTabChange(i));
+
+          li.appendChild(span);
+          tabsElement.appendChild(li);
+        });
+      }
+
+      function renderTable() {
+        const labNameElement = document.getElementById("labName");
+        const notFoundMessageElement =
+          document.getElementById("notFoundMessage");
+        const searchValueElement = document.getElementById("searchValue");
+        const labsTableBody = document.getElementById("labsBody");
+
+        labNameElement.innerText = LabsNames[active];
+
+        const filteredLabs = labs[active].filter(
+          (item) =>
+            item.name
+              .toLowerCase()
+              .includes(searchValue.toLowerCase().trim()) ||
+            item.location
+              .toLowerCase()
+              .includes(searchValue.toLowerCase().trim()) ||
+            item.associatedFaculty
+              .toLowerCase()
+              .includes(searchValue.toLowerCase().trim())
+        );
+
+        if (filteredLabs.length === 0) {
+          notFoundMessageElement.style.display = "block";
+          searchValueElement.innerText = `"${searchValue}"`;
+        } else {
+          notFoundMessageElement.style.display = "none";
         }
-        const labs={
-            0:[
-  {
-    id: 1,
-    name: "Electric Machines (UG)",
-    location: "Room No. : 101, Ground Floor",
-    associatedFaculty: "Dr. Saifullah Payami",
-  },
-  {
-    id: 2,
-    name: "High Voltage (PG)",
-    location: "Room No. : 102, Ground Floor",
-    associatedFaculty: "Dr. C.C. Reddy",
-  },
-  {
-    id: 3,
-    name: "Power Electronics (UG+ PG)",
-    location: "Room No. : 104, Ground Floor",
-    associatedFaculty: "Dr. R Sekhar",
-  },
-  {
-    id: 4,
-    name: "Drives Lab",
-    location: "Room No. : 106, Ground Floor",
-    associatedFaculty: "TBA",
-  },
-  {
-    id: 5,
-    name: "Controls + Instrumentation (UG)",
-    location: "Room No. : 202, First Floor",
-    associatedFaculty: "Dr. Sanjay Roy",
-  },
-  {
-    id: 6,
-    name: "Power Systems (UG + PG)",
-    location: "Room No. : 203, First Floor",
-    associatedFaculty: "Dr. Ranjna Sohi, Dr. Bibhu",
-  },
-  {
-    id: 7,
-    name: "SYnchrophasor Measurement And Research (SYMAR) Lab",
-    location: "Room No. : 205, First Floor",
-    associatedFaculty: "Dr. Ranjna Sodhi",
-  },
-  {
-    id: 8,
-    name: "Dielectric Measurement Lab",
-    location: "Room No. : 406, Third Floor",
-    associatedFaculty: "Dr. C.C. Reddy",
-  },
-  {
-    id: 9,
-    name: "GEL Lab",
-    location: "Room No. : 409, Third Floor",
-    associatedFaculty: "Dr. Saifullah Pyami",
-  },
-],
-1:[
-  {
-    id: 1,
-    name: "Embedded System Lab",
-    location: "Room No. : 206, First Floor",
-    associatedFaculty: "Dr. J.S. Sahambi",
-  },
-  {
-    id: 2,
-    name: "Infra Red Imaging Lab",
-    location: "Room No. : 207, First Floor",
-    associatedFaculty: "Dr. Ravibabu",
-  },
-  {
-    id: 3,
-    name: "Communication Engg. Lab (UG + PG)",
-    location: "Room No. : 301, Second Floor",
-    associatedFaculty: "Dr. Suman Kumar",
-  },
-  {
-    id: 4,
-    name: "Electromagnetics Lab (UG)",
-    location: "Room No. : 303, Second Floor",
-    associatedFaculty:
-      "Dr. Ashwani Sharma, Dr. Vinayak Hande, Dr. Devarshi Das, Dr. M. Sakre",
-  },
-  {
-    id: 5,
-    name: "Antenna/ MW Lab",
-    location: "Room No. : 304, Second Floor",
-    associatedFaculty: "Dr. Ashwani Sharma",
-  },
-  {
-    id: 6,
-    name: "Computer Vision and Pattern Recognition Lab",
-    location: "Room No. : 405, Third Floor",
-    associatedFaculty: "Dr. Subrahmanyam Murala, Dr. Santosh K Vipparthi",
-  },
-  {
-    id: 7,
-    name: "Communication Research Lab",
-    location: "Room No. : 407, Third Floor",
-    associatedFaculty:
-      "Dr. Suman Kumar, Dr. Sam Darshi, Dr. Brajesh Kumbhani, Dr. Satyam Aggarwal",
-  },
-],
-2:[
-  {
-    id: 1,
-    name: "Analog + Digital (UG)",
-    location: "Room No. : 201, First Floor",
-    associatedFaculty: "Dr. Mahendra Sakare",
-  },
-  {
-    id: 2,
-    name: "VLSI Lab",
-    location: "Room No. : 302, Second Floor",
-    associatedFaculty:
-      "Dr. Rohit Sharma, Dr. Devarshi Das, Dr. Mahendra Sakare",
-  },
-  {
-    id: 3,
-    name: "VLSI Wet Lab",
-    location: "Room No. : 401, Third Floor",
-    associatedFaculty:
-      "Dr. Rohit Sharma, Dr. Devarshi Das, Dr. Mahendra Sakare",
-  },
-  {
-    id: 4,
-    name: "VLSI Characterization Lab",
-    location: "Room No. : 403, Third Floor",
-    associatedFaculty: "Dr. Pardeep Duhan, Dr. Abhishek Sharma",
-  },
-  {
-    id: 5,
-    name: "Product Eng. Lab",
-    location: "Room No. : 404, Third Floor",
-    associatedFaculty: "Dr. Brajesh Rawat",
-  },
-  {
-    id: 6,
-    name: "BEL Lab",
-    location: "Room No. : 408, Third Floor",
-    associatedFaculty: "Dr. Mahendra Sakare",
-  },
-],
-        };
 
-
-        function renderTabs() {
-  const tabsElement = document.getElementById('tabs');
-  tabsElement.innerHTML = '';
-
-  LabsNames.forEach((data, i) => {
-    const li = document.createElement('li');
-    li.className = 'nav-item';
-    
-
-    const span = document.createElement('span');
-    span.className = `nav-link ${active === i ? 'active' : ''}`;
-    span.textContent = `${data} ${active === i ? `(${labs[active].length})` : ''}`;
-    span.addEventListener('click', () => handleTabChange(i));
-    
-    li.appendChild(span);
-    tabsElement.appendChild(li);
-  });
-}
-
-
-
-        function renderTable() {
-    const labNameElement = document.getElementById("labName");
-    const notFoundMessageElement = document.getElementById("notFoundMessage");
-    const searchValueElement = document.getElementById("searchValue");
-    const labsTableBody = document.getElementById("labsBody");
-
-    labNameElement.innerText = LabsNames[active];
-
-    const filteredLabs = labs[active].filter(item =>
-      item.name.toLowerCase().includes(searchValue.toLowerCase().trim()) ||
-      item.location.toLowerCase().includes(searchValue.toLowerCase().trim()) ||
-      item.associatedFaculty.toLowerCase().includes(searchValue.toLowerCase().trim())
-    );
-
-    if (filteredLabs.length === 0) {
-      notFoundMessageElement.style.display = "block";
-      searchValueElement.innerText = `"${searchValue}"`;
-    } else {
-      notFoundMessageElement.style.display = "none";
-    }
-
-    labsTableBody.innerHTML = filteredLabs.map((item, i) =>
-      `<tr>
+        labsTableBody.innerHTML = filteredLabs
+          .map(
+            (item, i) =>
+              `<tr>
         <td>${item.id}</td>
         <td class="fw-bold">${item.name}</td>
         <td>${item.location}</td>
         <td>${item.associatedFaculty}</td>
       </tr>`
-    ).join('');
-  }
-renderTabs();
-  // Initial render
-  renderTable();
-
+          )
+          .join("");
+      }
+      renderTabs();
+      // Initial render
+      renderTable();
     </script>
   </body>
 </html>

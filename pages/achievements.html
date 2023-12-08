@@ -30,23 +30,25 @@
     <!-- CSS -->
     <link rel="stylesheet" class="theme" href="./../css/theme.css" />
     <link rel="stylesheet" href="./../css/common.css" />
-    <link rel="stylesheet" href="./../css/research.css" />
-
     <link rel="stylesheet" href="./../css/navbar.css" />
     <link rel="stylesheet" href="./../css/slider.css" />
     <link rel="stylesheet" href="./../css/home.css" />
     <link rel="stylesheet" href="./../css/course.offered.css" />
     <link rel="stylesheet" href="./../css/news.feed.css" />
-    <link rel="stylesheet" href="./../css/tabs.css" />
     <link rel="stylesheet" href="./../css/loader.css" />
     <!-- JS -->
     <script src="./../scripts/footer.js"></script>
     <script src="./../scripts/navbar.js"></script>
-    <script src="./../scripts/research.highlights.js"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
-    <!-- Navbar Started -->
+    <!-- Navbar Start -->
     <div
       id="navbarCustom"
       class="bg-white w-100 m-0 top-0"
@@ -74,7 +76,7 @@
               class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
             >
               <!-- <div class="pt-2">+91-1881-232202</div>
-                      <div>eeoffice@iitrpr.ac.in</div> -->
+                        <div>eeoffice@iitrpr.ac.in</div> -->
               <div class="pb-2">
                 <div class>
                   <div id="google_translate_element"></div>
@@ -226,54 +228,53 @@
         </div>
       </div>
     </div>
-    <!-- Navbar Ended -->
-    <!-- Started  -->
-    <div
-      class="w-100 d-flex justify-content-center align-items-center flex-column py-5"
-    >
-      <h1 class="text-center main_head mb-5">
-        Areas of <span> Research</span>
-      </h1>
-      <div class="container">
-        <p class="mb-3">
-          Research Areas The Faculty members of the department are currently
-          active in various research areas, listed as under:
-        </p>
-        <table
-          class="table table-bordered table-hover table-responsive table-striped"
-        >
-          <thead>
-            <tr class="table-dark">
-              <td>Sr. No.</td>
-              <td>Title</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td class="fw-bold">Renewable Energy</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td class="fw-bold">Power Systems</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td class="fw-bold">High Voltage Engineering</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td key="4" class="fw-bold">Space Charges in Dielectrics</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td key="5" class="fw-bold">Communication</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Navbar End -->
+    <!-- Achievements Start -->
+    <div class="container py-5">
+      <h1 class="main_head text-center">Achievements</h1>
+      <br />
+      <div class="p-3 shadow-lg rounded-2 fade-in-custom">
+        <div class="head">
+          <div class="">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="w-100 rounded-2 form-control p-3"
+              placeholder="Search.."
+              value=""
+              style="box-shadow: none"
+              fdprocessedid="u67666"
+            />
+          </div>
+          <div class="w-100 overflow-auto">
+            <table class="table fade-in-custom table-bordered my-4" id="table">
+              <thead class="bg-dark text-white">
+                <tr>
+                  <th scope="col">Sr. No.</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Supervisor</th>
+                  <th scope="col">Award</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Test</td>
+                  <td>Research Scholar</td>
+                  <td>EED</td>
+                  <td>Dr. K. R. Sekhar</td>
+                  <td class="fw-bold" style="color: var(--shade4)">NA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-    <!--  Ended -->
+    <!-- Achievements Ended -->
     <!-- Footer Started -->
     <footer
       class="text-center text-lg-start text-white h-100vh d-flex justify-content-between align-items-stretch flex-column"
@@ -287,59 +288,33 @@
           <span class="fw-bold">Get connected on social networks</span>
         </div>
         <div>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-instagram"> </i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-linkedin"> </i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-github"></i>
-          </a>
+          <a href="#" class="text-white me-4"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-4"><i class="fab fa-google"></i></a>
+          <a href="#" class="text-white me-4"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-white me-4"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" class="text-white me-4"><i class="fab fa-github"></i></a>
         </div>
       </section>
-      <section class>
+      <section class="">
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <img
                 src="./../assets/news/logo_full.jpg"
                 alt="logo_iitrpr"
-                style="width: auto; background-color: #fff; height: 200px"
+                style="width: 200px; background-color: #fff; height: auto"
                 class="rounded-2 p-1"
               />
               <h6 class="text-uppercase fw-bold h2 mt-4">
                 Department of Electrical Engineering
               </h6>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6
-                class="text-uppercase fw-bold underline mb-3"
-                style="color: var(--shade2)"
-              >
-                Quick Links
-              </h6>
-              <!-- Quick Links rendering here -->
-              <p>
-                <a href="#" class="text-white underline-hover"
-                  >Classroom Booking
-                </a>
-              </p>
-              <p>
-                <a href="#" class="text-white underline-hover"
-                  >Download Forms
-                </a>
-              </p>
-              <!-- Add more Quick Links -->
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6
@@ -348,38 +323,74 @@
               >
                 Opportunities
               </h6>
-              <!-- Opportunities rendering here -->
               <p>
-                <a href="#" class="text-white underline-hover"
-                  >Faculty Positions
-                </a>
+                <a class="text-white underline-hover" href="/"
+                  >Faculty Positions</a
+                >
               </p>
               <p>
-                <a href="#" class="text-white underline-hover"
-                  >Ph.D. Positions
-                </a>
+                <a class="text-white underline-hover" href="/"
+                  >Ph.D. Positions</a
+                >
               </p>
-              <!-- Add more Opportunities -->
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Staff Positions</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Project Positions</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Post Doctorate Fellowship</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Summer Internship</a
+                >
+              </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6
                 class="text-uppercase fw-bold underline mb-3"
                 style="color: var(--shade2)"
               >
-                Other Links
+                Opportunities
               </h6>
-              <!-- Other Links rendering here -->
               <p>
-                <a href="#" class="text-white underline-hover">Deans</a>
+                <a class="text-white underline-hover" href="/"
+                  >Faculty Positions</a
+                >
               </p>
               <p>
-                <a href="#" class="text-white underline-hover"
-                  >Associate Deans
-                </a>
+                <a class="text-white underline-hover" href="/"
+                  >Ph.D. Positions</a
+                >
               </p>
-              <!-- Add more Other Links -->
-              <!-- Uncomment the following line if needed -->
-              <!-- <p><a href="/login" class="text-white underline-hover">Administrative Login</a></p> -->
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Staff Positions</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Project Positions</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Post Doctorate Fellowship</a
+                >
+              </p>
+              <p>
+                <a class="text-white underline-hover" href="/"
+                  >Summer Internship</a
+                >
+              </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6
@@ -423,14 +434,13 @@
             <a
               href="https://www.linkedin.com/"
               class="text-white underline-hover"
-              >CVPR Lab
-            </a>
+              >CVPR Lab</a
+            >
           </div>
           <div class="ml-5">Last Updated - 04-09-2023</div>
         </div>
       </div>
     </footer>
-    <!-- Footer Ended -->
     <!-- Loader Module -->
     <script src="./../scripts/loader.js"></script>
   </body>

@@ -1,15 +1,14 @@
-// Settings of Count
-const time = 2000 // 2 seconds
-
 window.addEventListener('load', () => {
     let elems = document.querySelectorAll('.count_custom');
+
     elems.forEach((item, index) => {
         let count = Number(item.innerHTML);
-        customCount(item, count);
+        let time = item.getAttribute('time');
+        customCount(item, count, time);
     });
 });
 
-function customCount(element, count) {
+function customCount(element, count, time) {
     const delay = Math.round(time / count);
     let currentCount = 0;
     let intervalId = setInterval(() => {

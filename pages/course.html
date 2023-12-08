@@ -46,23 +46,7 @@
   </head>
 
   <body>
-    <style>
-        /* .course_card_head {
-    font-weight: 800 !important;
-    background-color: #00000043;
-    text-transform: uppercase;
-    border-bottom: 2px solid black !important;
-    border-left: 1px solid black !important;
-    border-right: 1px solid black !important;
-    border-top: 1px solid black !important;
-}
-
-.course_card_desc {
-    border-bottom: 5px solid black !important;
-    border-left: 1px solid black !important;
-    border-right: 1px solid black !important;
-} */
-    </style>
+    <!-- Navbar Started -->
     <div
       id="navbarCustom"
       class="bg-white w-100 m-0 top-0"
@@ -74,10 +58,10 @@
           style="justify-content: space-between"
         >
           <div class="col-12 col-lg-3 p-0">
-            <div class="display-3 fw-bold py-2 text-center text-lg-center">
+            <div class="display-3 fw-bold p-0 text-center text-lg-center">
               <a href="https://iitrpr.ac.in/" target="_blank">
                 <img
-                  src="./../assets/iitr-banner.png"
+                  src="./../assets/new_logo.png"
                   alt="logo"
                   class="logo_img"
                 />
@@ -87,10 +71,10 @@
           </div>
           <div class="col-12 col-lg-3 p-0">
             <div
-              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0"
+              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
             >
-              <div class="pt-2">+91-1881-232202</div>
-              <div>eeoffice@iitrpr.ac.in</div>
+              <!-- <div class="pt-2">+91-1881-232202</div>
+                          <div>eeoffice@iitrpr.ac.in</div> -->
               <div class="pb-2">
                 <div class>
                   <div id="google_translate_element"></div>
@@ -134,7 +118,11 @@
               <ul class="navbar-nav text-uppercase ps-2">
                 <!-- Main Links -->
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/home.html">Home</a>
+                  <a
+                    class="nav-link active pe-3 fw-bold"
+                    href="/pages/home.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
@@ -152,9 +140,9 @@
                     People
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/faculty">Faculty</a>
-                    <a class="dropdown-item" href="/staff">Staff</a>
-                    <a class="dropdown-item" href="/students">Students</a>
+                    <a class="dropdown-item" href="#">Faculty</a>
+                    <a class="dropdown-item" href="#">Staff</a>
+                    <a class="dropdown-item" href="#">Students</a>
                   </div>
                 </li>
                 <!-- Courses Dropdown -->
@@ -171,17 +159,21 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="/courses/btech">Btech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Btech</a
+                      >
                     </li>
                     <li></li>
                     <li>
-                      <a class="dropdown-item" href="/courses/mtech">Mtech</a>
+                      <a class="dropdown-item" href="/pages/course.html"
+                        >Mtech</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/phd">Phd</a>
+                      <a class="dropdown-item" href="/pages/course.html">Phd</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/courses/msc">Msc</a>
+                      <a class="dropdown-item" href="/pages/course.html">Msc</a>
                     </li>
                   </ul>
                 </li>
@@ -198,15 +190,15 @@
                     Research
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/research/areas">Areas</a>
-                    <a class="dropdown-item" href="/research/facility">
+                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
+                    <a class="dropdown-item" href="/pages/facilities.html">
                       Facility
                     </a>
-                    <a class="dropdown-item" href="/research/labs">Labs</a>
-                    <a class="dropdown-item" href="/research/publications">
+                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
+                    <a class="dropdown-item" href="/pages/publications.html">
                       Publications
                     </a>
-                    <a class="dropdown-item" href="/research/projects">
+                    <a class="dropdown-item" href="/pages/project.html">
                       Projects
                     </a>
                   </div>
@@ -214,80 +206,75 @@
                 <!-- Other Links -->
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/addmissions.html"
-                    >Admissions
-                  </a>
+                    >Admissions</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/achievements">Achievements</a>
+                  <a class="nav-link" href="/pages/achievements.html"
+                    >Achievements</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/committee">Committee</a>
+                  <a class="nav-link" href="/pages/committe.html">Committee</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/contact.html">Contact</a>
                 </li>
               </ul>
-              <div class="text-white m-1 p-3">
-                <button
-                  type="button"
-                  onClick
-                  class="btn getBtn rounded-0 text-white hover-btn btn41-43 btn-41"
-                  style="z-index: 0"
-                >
-                  Login
-                </button>
-              </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
+    <!-- Navbar Ended -->
     <!-- Started  -->
     <div class="row p-5 fade-in-custom">
-        <h1 class="h1 text-center main_head mb-5">
-          $courseName <br class="d-lg-none" />
-          <span>Courses</span>
-        </h1>
-        <div class="">
-          <label htmlFor="search" class="fw-bold h5">
-            Search a Course
-          </label>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            class="w-100 rounded-2 form-control  p-3 mb-3"
-            style="box-shadow: none;"
-            placeholder="Search.."
-            oninput="setSearchValue(event.target.value)"
-          />
+      <h1 class="h1 text-center main_head mb-5">
+        $courseName <br class="d-lg-none" />
+        <span>Courses</span>
+      </h1>
+      <div class="">
+        <label htmlFor="search" class="fw-bold h5"> Search a Course </label>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="w-100 rounded-2 form-control p-3 mb-3"
+          style="box-shadow: none"
+          placeholder="Search.."
+          oninput="setSearchValue(event.target.value)"
+        />
+      </div>
+      <div class="w-full">
+        <div
+          id="notFoundMessage"
+          class="alert alert-danger mt-4 fade-in-custom"
+          role="alert"
+          style="display: none"
+        >
+          Not items matched with
+          <span id="searchValue" class="text-red fw-bold mx-2"></span>
         </div>
-        <div class="w-full">
-              <div id="notFoundMessage" class="alert alert-danger mt-4 fade-in-custom" role="alert" style="display: none;">
-                Not items matched with
-                <span id="searchValue" class="text-red fw-bold mx-2"></span>
-              </div>
-              <table
-          class="table table-bordered table-striped  table-hover mt-0"
+        <table
+          class="table table-bordered table-striped table-hover mt-0"
           id="courses_table"
         >
           <thead>
             <tr
               class="bg-dark text-white fw-bold"
-              style="border: 1px solid #000;"
+              style="border: 1px solid #000"
             >
               <th class="heading h4">Code</th>
               <th class="heading h4">Title</th>
               <th class="heading h4">L-T-P-S-C</th>
-              <th class="heading h4 text-end"></th> <!--if logged in-->
+              <th class="heading h4 text-end"></th>
+              <!--if logged in-->
             </tr>
           </thead>
-          <tbody id="courses_table_body">
-
-        </tbody>
-    </table>
-  </div>
-</div>
+          <tbody id="courses_table_body"></tbody>
+        </table>
+      </div>
+    </div>
     <!--  Ended -->
     <!-- Footer Started -->
     <footer
@@ -449,56 +436,63 @@
     <!-- Loader Module -->
     <script src="./../scripts/loader.js"></script>
     <script>
-        let search = "";
-        const courses = [
-  {
-    userid: 1,
-    code: 'CS101',
-    title: 'Introduction to Computer Science',
-    description: 'An introductory course covering the basics of computer science.',
-    ltpsc: '3-1-0-3-4', // Replace with actual values
-  },
-  {
-    userid: 2,
-    code: 'MATH201',
-    title: 'Calculus I',
-    description: 'A foundational course in calculus for mathematics majors.',
-    ltpsc: '3-1-0-4-4', // Replace with actual values
-  },
-  // Add more courses as needed
-];
-        function setSearchValue(value) {
+      let search = "";
+      const courses = [
+        {
+          userid: 1,
+          code: "CS101",
+          title: "Introduction to Computer Science",
+          description:
+            "An introductory course covering the basics of computer science.",
+          ltpsc: "3-1-0-3-4", // Replace with actual values
+        },
+        {
+          userid: 2,
+          code: "MATH201",
+          title: "Calculus I",
+          description:
+            "A foundational course in calculus for mathematics majors.",
+          ltpsc: "3-1-0-4-4", // Replace with actual values
+        },
+        // Add more courses as needed
+      ];
+
+      function setSearchValue(value) {
         search = value;
         updateTable();
-        }
-        function updateTable() {
+      }
+
+      function updateTable() {
         const tableBody = document.getElementById("courses_table_body");
-        const notFoundMessageElement = document.getElementById("notFoundMessage");
+        const notFoundMessageElement =
+          document.getElementById("notFoundMessage");
         const searchText = document.getElementById("searchValue");
-
-
 
         // Remove existing rows
         tableBody.innerHTML = "";
 
         // Filter and add new rows
-          
-            
-          const matchesSearch =courses.filter( course=>
+
+        const matchesSearch = courses.filter(
+          (course) =>
             course.title.toLowerCase().includes(search.toLowerCase().trim()) ||
             course.code.toLowerCase().includes(search.toLowerCase().trim()) ||
             course.ltpsc.toLowerCase().includes(search.toLowerCase().trim()) ||
-            course.description.toLowerCase().includes(search.toLowerCase().trim()));
+            course.description
+              .toLowerCase()
+              .includes(search.toLowerCase().trim())
+        );
 
-
-            if (matchesSearch.length === 0) {
-      notFoundMessageElement.style.display = "block";
-      searchText.innerText = `"${search}"`;
-    } else {
-      notFoundMessageElement.style.display = "none";
-    }
-    tableBody.innerHTML = matchesSearch.map((item, i) =>
-    `
+        if (matchesSearch.length === 0) {
+          notFoundMessageElement.style.display = "block";
+          searchText.innerText = `"${search}"`;
+        } else {
+          notFoundMessageElement.style.display = "none";
+        }
+        tableBody.innerHTML = matchesSearch
+          .map(
+            (item, i) =>
+              `
     <tr class="course_card_head course_row courses_rows">
         <td class="border-0">${item.code}</td>
         <td class="border-0">${item.title}</td>
@@ -552,10 +546,10 @@
         <td colspan="4">${item.description}</td>
       </tr>
     `
-    ).join('');
-    }
-    updateTable();
-
+          )
+          .join("");
+      }
+      updateTable();
     </script>
   </body>
 </html>
