@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Department of Electrical Engineering</title>
-    <link
-      rel="shortcut icon"
-      href="https://www.iitrpr.ac.in/sites/default/files/logo_0_1.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="https://www.iitrpr.ac.in/sites/default/files/logo_0_1.png" type="image/x-icon" />
     <meta name="description" content />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
     <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="./../scripts/footer.js"></script>
     <script src="./../scripts/navbar.js"></script>
@@ -42,67 +27,48 @@
     <link rel="stylesheet" href="./../css/loader.css" />
     <link rel="stylesheet" href="./../css/research.css" />
     <link rel="stylesheet" href="./../css/tabs.css" />
-  </head>
+</head>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
 
-  <body>
+<body>
     <!-- Navbar Started -->
-    <div
-      id="navbarCustom"
-      class="bg-white w-100 m-0 top-0"
-      style="z-index: 999"
-    >
-      <div class="container-fluid p-0 bg-nav">
-        <div
-          class="row d-flex align-items-center mx-lg-3 mx-2"
-          style="justify-content: space-between"
-        >
-          <div class="col-12 col-lg-3 p-0">
-            <div class="display-3 fw-bold p-0 text-center text-lg-center">
-              <a href="https://iitrpr.ac.in/" target="_blank">
-                <img
-                  src="./../assets/new_logo.png"
-                  alt="logo"
-                  class="logo_img"
-                />
-              </a>
-            </div>
-            <hr class="d-block d-lg-none" />
-          </div>
-          <div class="col-12 col-lg-3 p-0">
-            <div
-              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
-            >
-              <!-- <div class="pt-2">+91-1881-232202</div>
-                      <div>eeoffice@iitrpr.ac.in</div> -->
-              <div class="pb-2">
-                <div class>
-                  <div id="google_translate_element"></div>
+    <div id="navbarCustom" class="bg-white w-100 m-0 top-0" style="z-index: 999">
+        <div class="container-fluid p-0 bg-nav">
+            <div class="row d-flex align-items-center mx-lg-3 mx-2" style="justify-content: space-between">
+                <div class="col-12 col-lg-3 p-0">
+                    <div class="display-3 fw-bold p-0 text-center text-lg-center">
+                        <a href="https://iitrpr.ac.in/" target="_blank">
+                            <img src="./../assets/new_logo.png" alt="logo" class="logo_img" />
+                        </a>
+                    </div>
+                    <hr class="d-block d-lg-none" />
                 </div>
-              </div>
+                <div class="col-12 col-lg-3 p-0">
+                    <div class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center">
+                        <!-- <div class="pt-2">+91-1881-232202</div>
+                      <div>eeoffice@iitrpr.ac.in</div> -->
+                        <div class="pb-2">
+                            <div class>
+                                <div id="google_translate_element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="navbarBgDark" data-bs-theme="dark">
-          <nav
-            class="navbar navbar-expand-lg justify-content-center justify-content-lg-between p-0"
-          >
-            <button
-              class="shadow-none d-lg-none navbar-toggler m-3 w-100 text-white text-center"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              id="toggle-btn-custom"
-              style="
+            <div class="navbarBgDark" data-bs-theme="dark">
+                <nav class="navbar navbar-expand-lg justify-content-center justify-content-lg-between p-0">
+                    <button class="shadow-none d-lg-none navbar-toggler m-3 w-100 text-white text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn-custom"
+                        style="
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 outline: none;
                 border: none;
-              "
-            >
+              ">
               <span class="material-symbols-outlined">menu</span>
               <span
                 class="h5 d-flex justify-content-center align-items-center pt-2"
@@ -110,56 +76,35 @@
                 Menu
               </span>
             </button>
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarNavDropdown"
-            >
-              <ul class="navbar-nav text-uppercase ps-2">
-                <!-- Main Links -->
-                <li class="nav-item">
-                  <a
-                    class="nav-link active pe-3 fw-bold"
-                    href="/pages/home.html"
-                    >Home</a
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                        <ul class="navbar-nav text-uppercase ps-2">
+                            <!-- Main Links -->
+                            <li class="nav-item">
+                                <a class="nav-link active pe-3 fw-bold" href="/pages/home.html">Home</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
-                </li>
-                <!-- People Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                            </li>
+                            <!-- People Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     People
                   </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Faculty</a>
-                    <a class="dropdown-item" href="#">Staff</a>
-                    <a class="dropdown-item" href="#">Students</a>
-                  </div>
-                </li>
-                <!-- Courses Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Faculty</a>
+                                    <a class="dropdown-item" href="#">Staff</a>
+                                    <a class="dropdown-item" href="#">Students</a>
+                                </div>
+                            </li>
+                            <!-- Courses Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Courses
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="/pages/course.html"
-                        >Btech</a
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/course.html">Btech</a
                       >
                     </li>
                     <li></li>
@@ -170,42 +115,34 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="/pages/course.html">Phd</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/pages/course.html">Msc</a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- Research Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/course.html">Msc</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Research Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Research
                   </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
-                    <a class="dropdown-item" href="/pages/facilities.html">
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
+                                    <a class="dropdown-item" href="/pages/facilities.html">
                       Facility
                     </a>
-                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
-                    <a class="dropdown-item" href="/pages/publications.html">
+                                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
+                                    <a class="dropdown-item" href="/pages/publications.html">
                       Publications
                     </a>
-                    <a class="dropdown-item" href="/pages/project.html">
+                                    <a class="dropdown-item" href="/pages/project.html">
                       Projects
                     </a>
-                  </div>
-                </li>
-                <!-- Other Links -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/addmissions.html"
-                    >Admissions</a
+                                </div>
+                            </li>
+                            <!-- Other Links -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/addmissions.html">Admissions</a
                   >
                 </li>
                 <li class="nav-item">
@@ -215,156 +152,63 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/committe.html">Committee</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/contact.html">Contact</a>
-                </li>
-              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </nav>
         </div>
-      </div>
     </div>
     <!-- Navbar Ended -->
     <!-- Publication Started  -->
-    <div
-      class="w-100 d-flex justify-content-center align-items-center flex-column py-5"
-    >
-      <h1 class="text-center main_head mb-5">
-        List of <span> Publications!</span>
-      </h1>
-      <div
-        class="col-sm-12 d-flex flex-lg-row flex-column px-4 publications-row justify-content-center align-items-center align-items-lg-start"
-      >
-        <div
-          class="col-sm-3 shadow-lg p-3 position-sticky top-0 filter-card show_filter_panel_desktop"
-          style="height: fit-content"
-        >
-          <div class="d-flex justify-content-between">
-            <p class="h3 text-secondary my-2">
-              <i class="fa-solid fa-filter" aria-hidden="true"></i> Filters
-            </p>
-          </div>
-          <div class="accordion mt-3" id="OpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button outline-none collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
+    <div class="w-100 d-flex justify-content-center align-items-center flex-column py-5">
+        <h1 class="text-center main_head mb-5">
+            List of <span> Publications!</span>
+        </h1>
+        <div class="col-sm-12 d-flex flex-lg-row flex-column px-4 publications-row justify-content-center align-items-center align-items-lg-start">
+            <div class="col-sm-3 shadow-lg p-3 position-sticky top-0 filter-card show_filter_panel_desktop" style="height: fit-content">
+                <div class="d-flex justify-content-between">
+                    <p class="h3 text-secondary my-2">
+                        <i class="fa-solid fa-filter" aria-hidden="true"></i> Filters
+                    </p>
+                </div>
+                <div class="accordion mt-3" id="OpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   BY TYPE
                 </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#OpenExample"
-                style=""
-              >
-                <div class="accordion-body p-0">
-                  <div class="list-group m-0">
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                          checked=""
-                        />All</label
-                      >
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#OpenExample" style="">
+                            <div class="accordion-body p-0">
+                                <div class="list-group m-0">
+                                    <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterPublicationTypeInit(this.value)">
+                      <option value="0">All</option>
+                      <option value="conference">Conference</option>
+                      <option value="patent">Patent</option>
+                      <option value="journal">Journal</option>
+                      <option value="book">Book</option>
+                      <option value="book_chapter">Book Chapter</option>
+                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Conference</label
-                      >
-                    </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Patent</label
-                      >
-                    </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Journal</label
-                      >
-                    </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Book</label
-                      >
-                    </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Book Chapter</label
-                      >
-                    </div>
-                    <div class="form-check form-switch">
-                      <label class="list-group-item"
-                        ><input
-                          class="form-check-input me-1"
-                          type="checkbox"
-                          value="true"
-                        />Publications</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button outline-none collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   BY Faculty
                 </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                data-bs-parent="#OpenExample"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                style=""
-              >
-                <div class="accordion-body p-0">
-                  <div class="list-group m-0">
-                    <select
-                      class="form-select w-auto m-2 p-3 border-0"
-                      style="box-shadow: none"
-                    >
-                      <option value="">All</option>
-                      <option value="Test Contributor">Test Contributor</option>
-                      <option value="Dishant">Dishant</option>
+                        </h2>
+                        <div id="collapseTwo" data-bs-parent="#OpenExample" class="accordion-collapse collapse" aria-labelledby="headingTwo" style="">
+                            <div class="accordion-body p-0">
+                                <div class="list-group m-0">
+                                    <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterFacultyInit(this.value)">
+                      <option value="0">All</option>
+
                       <option value="Dr. Ranjana Sodhi">
                         Dr. Ranjana Sodhi
                       </option>
@@ -397,590 +241,435 @@
                         Dr A. V. Ravi Teja
                       </option>
                     </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button outline-none collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   BY Year
                 </button>
-              </h2>
-              <div
-                id="collapseThree"
-                data-bs-parent="#OpenExample"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                style=""
-              >
-                <div class="accordion-body p-0">
-                  <div class="list-group m-0">
-                    <select
-                      class="form-select w-auto m-2 p-3 border-0"
-                      style="box-shadow: none"
-                    >
-                      <option value="">All</option>
-                      <option>2022</option>
-                      <option>2021</option>
-                      <option>2020</option>
-                      <option>2019</option>
-                      <option>2018</option>
-                      <option>2017</option>
-                      <option>2016</option>
-                      <option>2015</option>
-                      <option>2014</option>
-                      <option>2013</option>
-                      <option>2012</option>
-                      <option>2011</option>
-                      <option>2010</option>
-                      <option>2009</option>
-                      <option>2008</option>
-                      <option>2007</option>
-                      <option>2006</option>
-                      <option>2005</option>
-                      <option>2004</option>
-                      <option>2003</option>
-                      <option>2000</option>
-                      <option>1998</option>
-                      <option>1997</option>
-                      <option>1996</option>
-                      <option>1995</option>
-                      <option>1992</option>
+                        </h2>
+                        <div id="collapseThree" data-bs-parent="#OpenExample" class="accordion-collapse collapse" aria-labelledby="headingThree" style="">
+                            <div class="accordion-body p-0">
+                                <div class="list-group m-0">
+                                    <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterYearInit(this.value)">
+                      <option value="0">All</option>
+                      <option value="2024">2024</option>
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                      <option value="2011">2011</option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                      <option value="2007">2007</option>
+                      <option value="2006">2006</option>
+                      <option value="2005">2005</option>
+                      <option value="2004">2004</option>
+                      <option value="2003">2003</option>
+                      <option value="2000">2000</option>
+                      <option value="1998">1998</option>
+                      <option value="1997">1997</option>
+                      <option value="1996">1996</option>
+                      <option value="1995">1995</option>
+                      <option value="1992">1992</option>
                     </select>
-                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <ul class="d-flex gap-3 flex-column list-unstyled mx-lg-5">
-            <button
-              class="btn btn-danger show_filter_sidebar"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions"
-              aria-controls="offcanvasWithBothOptions"
-            >
+            <div class="col-sm-9">
+                <ul class="d-flex gap-3 flex-column list-unstyled mx-lg-5">
+                    <button class="btn btn-danger show_filter_sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <i class="fa-solid fa-filter" aria-hidden="true"></i> Filters
             </button>
-            <div class="bg-dark p-2 rounded-4 position-sticky top-0">
-              <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
-                <!-- Use a loop or manually add li elements for each item in AdmissionsData -->
-                <li class="nav-item">
-                  <span
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#first"
-                    type="button"
-                    role="tab"
-                    aria-controls="first"
-                    aria-selected="true"
-                  >
+                    <div class="bg-dark p-2 rounded-4 position-sticky top-0">
+                        <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+                            <!-- Use a loop or manually add li elements for each item in AdmissionsData -->
+                            <li class="nav-item">
+                                <span class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true" onclick="FilterYearInit(0)">
                     All
                   </span>
-                </li>
-                <li class="nav-item">
-                  <span
-                    class="nav-link"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#second"
-                    type="button"
-                    role="tab"
-                    aria-controls="second"
-                    aria-selected="false"
-                  >
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false" onclick="FilterYearInit(2021)">
                     2021
                   </span>
-                </li>
-                <li class="nav-item">
-                  <span
-                    class="nav-link"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#third"
-                    type="button"
-                    role="tab"
-                    aria-controls="third"
-                    aria-selected="false"
-                  >
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false" onclick="FilterYearInit(2022)">
                     2022
                   </span>
-                </li>
-                <li class="nav-item">
-                  <span
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#fourth"
-                    type="button"
-                    role="tab"
-                    aria-controls="fourth"
-                    aria-selected="false"
-                    >2023
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab" aria-controls="fourth" aria-selected="false" onclick="FilterYearInit(2023)">2023
                   </span>
-                </li>
-                <li class="nav-item">
-                  <span
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#fifth"
-                    type="button"
-                    role="tab"
-                    aria-controls="fifth"
-                    aria-selected="false"
-                    >2024
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab" aria-controls="fifth" aria-selected="false" onclick="FilterYearInit(2024)">2024
                   </span>
-                </li>
-              </ul>
-            </div>
-            <li>
-              <div class="d-flex g-3 flex-column">
-                <input
-                  type="text"
-                  name="search"
-                  id="search"
-                  class="w-100 rounded-4 form-control p-3"
-                  placeholder="Search for Publication.."
-                  value=""
-                />
-              </div>
-            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <li>
+                        <div class="d-flex g-3 flex-column">
+                            <input type="text" name="search" id="journal_search" class="w-100 rounded-4 form-control p-3" placeholder="Search for Publication.." value="" />
+                        </div>
+                    </li>
+                    <!-- Add Here New Publications -->
+                    <li class="shadow-lg border-1 border-gray rounded-3 py-3">
+                        <div class="text-center w-100 h4 fade-in-custom fw-bold hidden text-danger my-5" id="error_message">
+                            No matching publications found.
+                        </div>
+                        <ol id="publication_container">
+                            <!-- Paper 1 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >M. Forouzesh, Y. P. Siwakoti, S. A. Gorji, F.
+                        Blaabjerg, and B. Lehman,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Step-Up DC–DC Converters: A Comprehensive Review of
+                        Voltage-Boosting Techniques, Topologies, and
+                        Applications,"</strong
+                      >
+                      <span class="journal"
+                        >in <i>IEEE Transactions on Power Electronics</i>,</span
+                      >
+                      <span class="volume">vol. 32, no. 12,</span>
+                      <span class="pages">pp. 9143-9178,</span>
+                      <span class="date">Dec. 2017,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.1109/TPEL.2017.2652318"
+                          >10.1109/TPEL.2017.2652318</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
 
-            <li
-              class="fade-in-custom publications_filters mix col-xs-12 col-sm-12 col-md-12 col-lg-12 Conference-border conference avrteja 2020 rounded-5"
-              style="display: inline-block"
-            >
-              <div class="research-head">
-                <p class="fw-bold h3">Test Publication</p>
-                <a
-                  href="https://getbootstrap.com/docs/5.0/forms/input-group/"
-                  target="_blank"
-                  ><i
-                    class="fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-              <div class="research-auth mb-3">
-                <p class="h6">Authors:</p>
-                <ul class="prof_filters">
-                  <li><span class="p-1 fw-bold">Test Contributor</span></li>
-                  <li><span class="p-1 fw-bold">Dishant</span></li>
+                            <!-- Paper 2 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >A. Johnson, B. Smith, C. Williams,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Advancements in Quantum Computing: A Comprehensive
+                        Survey,"</strong
+                      >
+                      <span class="journal"
+                        >in <i>Journal of Quantum Information</i>,</span
+                      >
+                      <span class="volume">vol. 45, no. 3,</span>
+                      <span class="pages">pp. 201-220,</span>
+                      <span class="date">March 2023,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.1234/jqi.2023.12345"
+                          >10.1234/jqi.2023.12345</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
+
+                            <!-- Paper 3 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >D. Rodriguez, E. Martinez, F. Garcia,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Machine Learning Approaches for Predictive Maintenance
+                        in Industrial Systems,"</strong
+                      >
+                      <span class="journal"
+                        >in
+                        <i>IEEE Transactions on Industrial Informatics</i
+                        >,</span
+                      >
+                      <span class="volume">vol. 28, no. 7,</span>
+                      <span class="pages">pp. 1205-1220,</span>
+                      <span class="date">July 2023,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.1109/TII.2023.67890"
+                          >10.1109/TII.2023.67890</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
+
+                            <!-- Paper 4 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >R. Williams, S. Thompson, J. Davis,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Blockchain Technology: A Survey of Applications and
+                        Challenges,"</strong
+                      >
+                      <span class="journal"
+                        >in
+                        <i>IEEE Transactions on Emerging Technologies</i>,</span
+                      >
+                      <span class="volume">vol. 15, no. 4,</span>
+                      <span class="pages">pp. 890-912,</span>
+                      <span class="date">Aug. 2023,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.1109/TET.2023.78901"
+                          >10.1109/TET.2023.78901</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
+
+                            <!-- Paper 5 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >L. Garcia, M. Hernandez, P. Smith,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Advances in Renewable Energy Technologies: A
+                        Comprehensive Overview,"</strong
+                      >
+                      <span class="journal"
+                        >in <i>Renewable Energy Journal</i>,</span
+                      >
+                      <span class="volume">vol. 18, no. 5,</span>
+                      <span class="pages">pp. 550-567,</span>
+                      <span class="date">Sept. 2023,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.1089/rej.2023.45678"
+                          >10.1089/rej.2023.45678</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
+
+                            <!-- Paper 6 -->
+                            <li>
+                                <p>
+                                    <cite>
+                      <span class="author text-success"
+                        >S. Turner, K. Thompson, E. Davis,</span
+                      >
+                      <strong class="title text-danger"
+                        >"Applications of Artificial Intelligence in Healthcare:
+                        A Review of Recent Developments,"</strong
+                      >
+                      <span class="journal"
+                        >in <i>Journal of Healthcare Informatics</i>,</span
+                      >
+                      <span class="volume">vol. 12, no. 6,</span>
+                      <span class="pages">pp. 134-150,</span>
+                      <span class="date">Oct. 2023,</span>
+                      <span class="doi"
+                        >doi:
+                        <a href="https://doi.org/10.5678/jhi.2023.78901"
+                          >10.5678/jhi.2023.78901</a
+                        >.</span
+                      >
+                    </cite>
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
                 </ul>
-              </div>
-              <div class="research-date">
-                2008<span class="research-type Conference-color"
-                  >Conference</span
-                >
-              </div>
-              <div class="research-desc">
-                IECON 2021 – 47th Annual Conference of the IEEE Industrial
-                Electronics Society
-              </div>
-            </li>
-            <li
-              class="fade-in-custom publications_filters mix col-xs-12 col-sm-12 col-md-12 col-lg-12 Journal-border conference avrteja 2020 rounded-5"
-              style="display: inline-block"
-            >
-              <div class="research-head">
-                <p class="fw-bold h3">
-                  Multi-criteria decision-making approach for multi-stage
-                  optimal placement of phasor measurement units
-                </p>
-                <a
-                  href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=QGjIzxEAAAAJ&amp;citation_for_view=QGjIzxEAAAAJ:UeHWp8X0CEIC"
-                  target="_blank"
-                  ><i
-                    class="fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-              <div class="research-auth mb-3">
-                <p class="h6">Authors:</p>
-                <ul class="prof_filters">
-                  <li><span class="p-1 fw-bold">Dr. Ranjana Sodhi</span></li>
-                  <li><span class="p-1 fw-bold">SC Srivastava</span></li>
-                  <li><span class="p-1 fw-bold">SN Singh</span></li>
-                </ul>
-              </div>
-              <div class="research-date">
-                2011<span class="research-type Journal-color">Journal</span>
-              </div>
-              <div class="research-desc">IET Digital Library</div>
-            </li>
-            <li
-              class="fade-in-custom publications_filters mix col-xs-12 col-sm-12 col-md-12 col-lg-12 Book-Chapter-border conference avrteja 2020 rounded-5"
-              style="display: inline-block"
-            >
-              <div class="research-head">
-                <p class="fw-bold h3">Test 2</p>
-                <a
-                  href="https://getbootstrap.com/docs/5.0/forms/input-group/"
-                  target="_blank"
-                  ><i
-                    class="fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-              <div class="research-auth mb-3">
-                <p class="h6">Authors:</p>
-                <ul class="prof_filters">
-                  <li><span class="p-1 fw-bold">Dr. Abhishek Sharma</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Ashwani Sharma</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Kalaiselvi J.</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Saifullah Payami</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Devarshi Das</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Ranjana Sodhi</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Mahendra Sakare</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Suman Kumar</span></li>
-                  <li><span class="p-1 fw-bold">Dr. Satyam Aggarwal</span></li>
-                  <li><span class="p-1 fw-bold">Dr. J. S. Sahambi</span></li>
-                  <li><span class="p-1 fw-bold">Dr A. V. Ravi Teja</span></li>
-                  <li><span class="p-1 fw-bold">Dishant</span></li>
-                </ul>
-              </div>
-              <div class="research-date">
-                2008<span class="research-type Book-Chapter-color"
-                  >Book Chapter</span
-                >
-              </div>
-              <div class="research-desc">
-                IECON 2021 – 47th Annual Conference of the IEEE Industrial
-                Electronics Society
-              </div>
-            </li>
-            <li
-              class="fade-in-custom publications_filters mix col-xs-12 col-sm-12 col-md-12 col-lg-12 Journal-border conference avrteja 2020 rounded-5"
-              style="display: inline-block"
-            >
-              <div class="research-head">
-                <p class="fw-bold h3">Phasor-assisted hybrid state estimator</p>
-                <a
-                  href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=QGjIzxEAAAAJ&amp;citation_for_view=QGjIzxEAAAAJ:Y0pCki6q_DkC"
-                  target="_blank"
-                  ><i
-                    class="fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-              <div class="research-auth mb-3">
-                <p class="h6">Authors:</p>
-                <ul class="prof_filters">
-                  <li><span class="p-1 fw-bold">Dr. Ranjana Sodhi</span></li>
-                  <li><span class="p-1 fw-bold">SC Srivastava</span></li>
-                  <li><span class="p-1 fw-bold">SN Singh</span></li>
-                  <li><span class="p-1 fw-bold">Dishant</span></li>
-                </ul>
-              </div>
-              <div class="research-date">
-                2011<span class="research-type Journal-color">Journal</span>
-              </div>
-              <div class="research-desc">Taylor &amp; Francis Group</div>
-            </li>
-          </ul>
+            </div>
         </div>
-      </div>
     </div>
-    <div
-      class="offcanvas offcanvas-start show_filter_sidebar"
-      data-bs-scroll="true"
-      tabindex="-1"
-      id="offcanvasWithBothOptions"
-      aria-labelledby="offcanvasWithBothOptionsLabel"
-      aria-modal="true"
-      role="dialog"
-    >
-      <div class="offcanvas-header">
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="d-flex justify-content-between">
-          <p class="h3 text-secondary my-2">
-            <i class="fa-solid fa-filter" aria-hidden="true"></i> Filters
-          </p>
+    <div class="offcanvas offcanvas-start show_filter_sidebar" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" aria-modal="true" role="dialog">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="accordion mt-3" id="OpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button outline-none collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                BY TYPE
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#OpenExample"
-              style=""
-            >
-              <div class="accordion-body p-0">
-                <div class="list-group m-0">
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                        checked=""
-                      />All</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Conference</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Patent</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Journal</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Book</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Book Chapter</label
-                    >
-                  </div>
-                  <div class="form-check form-switch">
-                    <label class="list-group-item"
-                      ><input
-                        class="form-check-input me-1"
-                        type="checkbox"
-                        value="true"
-                      />Publications</label
-                    >
-                  </div>
-                </div>
-              </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between">
+                <p class="h3 text-secondary my-2">
+                    <i class="fa-solid fa-filter" aria-hidden="true"></i> Filters
+                </p>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button outline-none collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                BY Faculty
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              data-bs-parent="#OpenExample"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              style=""
-            >
-              <div class="accordion-body p-0">
-                <div class="list-group m-0">
-                  <select
-                    class="form-select w-auto m-2 p-3 border-0"
-                    style="box-shadow: none"
-                  >
-                    <option value="">All</option>
-                    <option value="Test Contributor">Test Contributor</option>
-                    <option value="Dishant">Dishant</option>
-                    <option value="Dr. Ranjana Sodhi">Dr. Ranjana Sodhi</option>
-                    <option value="SC Srivastava">SC Srivastava</option>
-                    <option value="SN Singh">SN Singh</option>
-                    <option value="Dr. Abhishek Sharma">
-                      Dr. Abhishek Sharma
-                    </option>
-                    <option value="Dr. Ashwani Sharma">
-                      Dr. Ashwani Sharma
-                    </option>
-                    <option value="Dr. Kalaiselvi J.">Dr. Kalaiselvi J.</option>
-                    <option value="Dr. Saifullah Payami">
-                      Dr. Saifullah Payami
-                    </option>
-                    <option value="Dr. Devarshi Das">Dr. Devarshi Das</option>
-                    <option value="Dr. Mahendra Sakare">
-                      Dr. Mahendra Sakare
-                    </option>
-                    <option value="Dr. Suman Kumar">Dr. Suman Kumar</option>
-                    <option value="Dr. Satyam Aggarwal">
-                      Dr. Satyam Aggarwal
-                    </option>
-                    <option value="Dr. J. S. Sahambi">Dr. J. S. Sahambi</option>
-                    <option value="Dr A. V. Ravi Teja">
-                      Dr A. V. Ravi Teja
-                    </option>
-                  </select>
+            <div class="accordion mt-3" id="OpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          BY TYPE
+        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#OpenExample" style="">
+                        <div class="accordion-body p-0">
+                            <div class="list-group m-0">
+                                <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterPublicationTypeInit(this.value)">
+              <option value="0">All</option>
+              <option value="conference">Conference</option>
+              <option value="patent">Patent</option>
+              <option value="journal">Journal</option>
+              <option value="book">Book</option>
+              <option value="book_chapter">Book Chapter</option>
+            </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button outline-none collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                BY Year
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              data-bs-parent="#OpenExample"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              style=""
-            >
-              <div class="accordion-body p-0">
-                <div class="list-group m-0">
-                  <select
-                    class="form-select w-auto m-2 p-3 border-0"
-                    style="box-shadow: none"
-                  >
-                    <option value="">All</option>
-                    <option>2022</option>
-                    <option>2021</option>
-                    <option>2020</option>
-                    <option>2019</option>
-                    <option>2018</option>
-                    <option>2017</option>
-                    <option>2016</option>
-                    <option>2015</option>
-                    <option>2014</option>
-                    <option>2013</option>
-                    <option>2012</option>
-                    <option>2011</option>
-                    <option>2010</option>
-                    <option>2009</option>
-                    <option>2008</option>
-                    <option>2007</option>
-                    <option>2006</option>
-                    <option>2005</option>
-                    <option>2004</option>
-                    <option>2003</option>
-                    <option>2000</option>
-                    <option>1998</option>
-                    <option>1997</option>
-                    <option>1996</option>
-                    <option>1995</option>
-                    <option>1992</option>
-                  </select>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          BY Faculty
+        </button>
+                    </h2>
+                    <div id="collapseTwo" data-bs-parent="#OpenExample" class="accordion-collapse collapse" aria-labelledby="headingTwo" style="">
+                        <div class="accordion-body p-0">
+                            <div class="list-group m-0">
+                                <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterFacultyInit(this.value)">
+              <option value="0">All</option>
+
+              <option value="Dr. Ranjana Sodhi">
+                Dr. Ranjana Sodhi
+              </option>
+              <option value="SC Srivastava">SC Srivastava</option>
+              <option value="SN Singh">SN Singh</option>
+              <option value="Dr. Abhishek Sharma">
+                Dr. Abhishek Sharma
+              </option>
+              <option value="Dr. Ashwani Sharma">
+                Dr. Ashwani Sharma
+              </option>
+              <option value="Dr. Kalaiselvi J.">
+                Dr. Kalaiselvi J.
+              </option>
+              <option value="Dr. Saifullah Payami">
+                Dr. Saifullah Payami
+              </option>
+              <option value="Dr. Devarshi Das">Dr. Devarshi Das</option>
+              <option value="Dr. Mahendra Sakare">
+                Dr. Mahendra Sakare
+              </option>
+              <option value="Dr. Suman Kumar">Dr. Suman Kumar</option>
+              <option value="Dr. Satyam Aggarwal">
+                Dr. Satyam Aggarwal
+              </option>
+              <option value="Dr. J. S. Sahambi">
+                Dr. J. S. Sahambi
+              </option>
+              <option value="Dr A. V. Ravi Teja">
+                Dr A. V. Ravi Teja
+              </option>
+            </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          BY Year
+        </button>
+                    </h2>
+                    <div id="collapseThree" data-bs-parent="#OpenExample" class="accordion-collapse collapse" aria-labelledby="headingThree" style="">
+                        <div class="accordion-body p-0">
+                            <div class="list-group m-0">
+                                <select class="form-select w-auto m-2 p-3 border-0" style="box-shadow: none" onchange="FilterYearInit(this.value)">
+              <option value="0">All</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2000">2000</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1992">1992</option>
+            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     </div>
     <!-- Publication Ended -->
     <!-- Footer Started -->
-    <footer
-      class="text-center text-lg-start text-white h-100vh d-flex justify-content-between align-items-stretch flex-column"
-      style="background-color: var(--dark)"
-    >
-      <section
-        class="d-flex justify-content-between p-4"
-        style="background-color: var(--shade2)"
-      >
-        <div class="me-5">
-          <span class="fw-bold">Get connected on social networks</span>
-        </div>
-        <div>
-          <a href="#" class="text-white me-4"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-4"><i class="fab fa-google"></i></a>
-          <a href="#" class="text-white me-4"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" class="text-white me-4"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#" class="text-white me-4"><i class="fab fa-github"></i></a>
-        </div>
-      </section>
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <img
-                src="./../assets/news/logo_full.jpg"
-                alt="logo_iitrpr"
-                style="width: 200px; background-color: #fff; height: auto"
-                class="rounded-2 p-1"
-              />
-              <h6 class="text-uppercase fw-bold h2 mt-4">
-                Department of Electrical Engineering
-              </h6>
+    <footer class="text-center text-lg-start text-white h-100vh d-flex justify-content-between align-items-stretch flex-column" style="background-color: var(--dark)">
+        <section class="d-flex justify-content-between p-4" style="background-color: var(--shade2)">
+            <div class="me-5">
+                <span class="fw-bold">Get connected on social networks</span>
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6
-                class="text-uppercase fw-bold underline mb-3"
-                style="color: var(--shade2)"
-              >
-                Quick Links
-              </h6>
-              <!-- Quick Links rendering here -->
-              <p>
-                <a href="#" class="text-white underline-hover"
-                  >Classroom Booking</a
+            <div>
+                <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i
+          ></a>
+                <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-4"><i class="fab fa-google"></i></a>
+                <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i
+          ></a>
+                <a href="#" class="text-white me-4"><i class="fab fa-linkedin"></i
+          ></a>
+                <a href="#" class="text-white me-4"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="./../assets/news/logo_full.jpg" alt="logo_iitrpr" style="width: 200px; background-color: #fff; height: auto" class="rounded-2 p-1" />
+                        <h6 class="text-uppercase fw-bold h2 mt-4">
+                            Department of Electrical Engineering
+                        </h6>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold underline mb-3" style="color: var(--shade2)">
+                            Quick Links
+                        </h6>
+                        <!-- Quick Links rendering here -->
+                        <p>
+                            <a href="#" class="text-white underline-hover">Classroom Booking</a
                 >
               </p>
               <p>
@@ -1019,58 +708,41 @@
               </h6>
               <!-- Other Links rendering here -->
               <p><a href="#" class="text-white underline-hover">Deans</a></p>
-              <p>
-                <a href="#" class="text-white underline-hover"
-                  >Associate Deans</a
+                        <p>
+                            <a href="#" class="text-white underline-hover">Associate Deans</a
                 >
               </p>
               <!-- Add more Other Links -->
               <!-- Uncomment the following line if needed -->
               <!-- <p><a href="/login" class="text-white underline-hover">Administrative Login</a></p> -->
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold h3 mb-3" style="color: var(--shade2)">
+                            Contact Us
+                        </h6>
+                        <p>
+                            <i class="fas fa-home mr-5"></i> EE-Office, Department of Electrical Engineering, J.C.Block, IIT Ropar, Rupnagar, Punjab, 140001
+                        </p>
+                        <p><i class="fas fa-envelope mr-5"></i> eeoffice@iitrpr.ac.in</p>
+                        <p><i class="fas fa-phone mr-5"></i> +91-1881-232202</p>
+                        <p><i class="fas fa-print mr-5"></i> NA</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6
-                class="text-uppercase fw-bold h3 mb-3"
-                style="color: var(--shade2)"
-              >
-                Contact Us
-              </h6>
-              <p>
-                <i class="fas fa-home mr-5"></i> EE-Office, Department of
-                Electrical Engineering, J.C.Block, IIT Ropar, Rupnagar, Punjab,
-                140001
-              </p>
-              <p><i class="fas fa-envelope mr-5"></i> eeoffice@iitrpr.ac.in</p>
-              <p><i class="fas fa-phone mr-5"></i> +91-1881-232202</p>
-              <p><i class="fas fa-print mr-5"></i> NA</p>
-            </div>
-          </div>
+        </section>
+        <div class="container">
+            <!-- Replace "path_to_your_gmap" with your Google Maps URL -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d54733.46517815982!2d76.503119!3d30.974903!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3905543310e70e63%3A0x63397d7938035537!2sRupnagar%20Old%20Bus%20Stand%2C%20Chhota%20Khera%2C%20Basant%20Nagar%2C%20Rupnagar%2C%20Punjab%20140001!3m2!1d30.966969499999998!2d76.5338166!4m5!1s0x390554d4ffffffff%3A0xb81f1e2708c91100!2sIndian%20institute%20of%20Technology%20Ropar%2C%20Bara%20Phool%2C%20Punjab%20140001!3m2!1d30.970918299999997!2d76.4731998!5e0!3m2!1sen!2sin!4v1625103532953!5m2!1sen!2sin"
+                width="100%" height="400px" style="border: none" allowfullscreen></iframe>
         </div>
-      </section>
-      <div class="container">
-        <!-- Replace "path_to_your_gmap" with your Google Maps URL -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d54733.46517815982!2d76.503119!3d30.974903!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3905543310e70e63%3A0x63397d7938035537!2sRupnagar%20Old%20Bus%20Stand%2C%20Chhota%20Khera%2C%20Basant%20Nagar%2C%20Rupnagar%2C%20Punjab%20140001!3m2!1d30.966969499999998!2d76.5338166!4m5!1s0x390554d4ffffffff%3A0xb81f1e2708c91100!2sIndian%20institute%20of%20Technology%20Ropar%2C%20Bara%20Phool%2C%20Punjab%20140001!3m2!1d30.970918299999997!2d76.4731998!5e0!3m2!1sen!2sin!4v1625103532953!5m2!1sen!2sin"
-          width="100%"
-          height="400px"
-          style="border: none"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div
-        class="container text-center pb-4"
-        style="background-color: var(--dark); color: var(--light)"
-      >
-        <hr />
-        <div class="d-flex justify-content-between align-items-center">
-          <div id="current_datetime" class="fw-bold"></div>
-          <div>
-            <!-- Replace the placeholder text with your copyright information -->
-            Copyright © 2023 IIT Ropar. Designed & Developed by
-            <a
-              href="https://www.linkedin.com/"
-              class="text-white underline-hover"
-              >CVPR Lab</a
+        <div class="container text-center pb-4" style="background-color: var(--dark); color: var(--light)">
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+                <div id="current_datetime" class="fw-bold"></div>
+                <div>
+                    <!-- Replace the placeholder text with your copyright information -->
+                    Copyright © 2023 IIT Ropar. Designed & Developed by
+                    <a href="https://www.linkedin.com/" class="text-white underline-hover">CVPR Lab</a
             >
           </div>
           <div class="ml-5">Last Updated - 04-09-2023</div>
@@ -1081,5 +753,6 @@
 
     <!-- Loader Module -->
     <script src="./../scripts/loader.js"></script>
+    <script src="./../scripts/publication.filter.js"></script>
   </body>
 </html>
