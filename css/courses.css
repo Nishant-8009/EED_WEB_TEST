@@ -6,10 +6,12 @@
     border-left: 1px solid black !important;
     border-right: 1px solid black !important;
     border-top: 1px solid black !important;
+    cursor: pointer;
 }
 
 .course_card_desc {
     border-bottom: 5px solid black !important;
     border-left: 1px solid black !important;
     border-right: 1px solid black !important;
+    cursor: pointer;
 }

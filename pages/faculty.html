@@ -15,23 +15,16 @@
     <!-- CSS -->
     <link rel="stylesheet" class="theme" href="./../css/theme.css" />
     <link rel="stylesheet" href="./../css/common.css" />
-    <link rel="stylesheet" href="./../css/research.css" />
-
     <link rel="stylesheet" href="./../css/navbar.css" />
-    <link rel="stylesheet" href="./../css/student_staff.css" />
-
     <link rel="stylesheet" href="./../css/slider.css" />
     <link rel="stylesheet" href="./../css/home.css" />
     <link rel="stylesheet" href="./../css/course.offered.css" />
     <link rel="stylesheet" href="./../css/news.feed.css" />
-    <link rel="stylesheet" href="./../css/tabs.css" />
     <link rel="stylesheet" href="./../css/loader.css" />
-    <!-- JS -->
-    <script src="./../scripts/footer.js"></script>
-    <script src="./../scripts/navbar.js"></script>
-    <script src="./../scripts/research.highlights.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="./../scripts/students.filter.js"></script>
+    <link rel="stylesheet" href="./../css/tabs.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -163,44 +156,87 @@
         </div>
     </div>
     <!-- Navbar End -->
-    <!-- Started  -->
+    <!-- Content Started  -->
     <div class="my-5 container">
-        <div class="h1 text-center main_head mb-4">Staff Members</div>
-        <div class="container">
-            <div class="my-3">
-                <input type="text" name="search" id="search_student" class="form-control p-3 w-100" style="box-shadow: none" placeholder="Search.." />
-            </div>
+        <div class="h1 text-center main_head mb-5"> <span>Faculty </span><small>Members</small></div>
+        <div class="bg-dark p-3 my-3 rounded-4 position-sticky" style="z-index: 2;">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"><span class="nav-link active" aria-current="page" aria-disabled="true">All</span></li>
+                <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Head of the Department</span></li>
+                <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Power Engineering</span></li>
+                <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Microelectronics &amp; VLSI Design</span></li>
+                <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Signal Processing and Communication</span></li>
+                <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Faculty Fellows</span></li>
+            </ul>
+        </div>
+        <div class="my-3">
 
-            <div id="notFoundMessage" class="alert alert-danger mt-4" role="alert" style="display: none">
-                Staff Not found.
-            </div>
-            <div class="card_container" id="card_body">
-                <div class="card">
-                    <div class="card-top" style="
-                  background-image: url(./../assets/EE_RSF2023_2.jpg);
-                  width: 150px;
-                  background-size: cover;
-                  background-position: center;
-                "></div>
-                    <div class="card-info1">
-                        <div class="card-info">
-                            <h2>Amit Kumar</h2>
-                            <!-- <span class="pos">2026</span> -->
-                            <ul style="list-style-type: none; padding-inline: 0px">
-                                <li>Designation : Lab Assistant</li>
-                                <li>Address : NA</li>
-                                <li>E-mail : test@iitrpr.ac.in</li>
-                                <li>Mobile :+91-9876543210</li>
-                            </ul>
+            <input type="text" name="search" id="search" class="form-control p-3" placeholder="Search by Name, Research Interests, etc.." value="" fdprocessedid="2iss"></div>
+
+        <section>
+            <div>
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Power Engineering
+                    <hr>
+                </div>
+                <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
+                    <div class="p-4">
+                        <p class="fw-bold h2">Test user</p>
+                        <p class="text-secondary h4">Assistant Professor</p>
+                        <div class="w-100">
+                            <hr class="dropdown-divider text-info">
                         </div>
-                    </div>
+                        <p><strong>Phone: </strong>9876543211</p>
+                        <p><strong>Email: </strong>testuser[at]gmail[dot]com</p>
+                        <p><strong>Research Interests:</strong>
+                            <div class="text-secondary fw-bold my-2">NA</div>
+                        </p>
+                        <p><strong>Homepage:</strong> <a href="#">Link</a></p>
+                        <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
                 </div>
             </div>
-        </div>
-
+            <div>
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Microelectronics &amp; VLSI Design
+                    <hr>
+                </div>
+                <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
+                    <div class="p-4">
+                        <p class="fw-bold h2">Dishant</p>
+                        <p class="text-secondary h4">Professor</p>
+                        <div class="w-100">
+                            <hr class="dropdown-divider text-info">
+                        </div>
+                        <p><strong>Phone: </strong>9992115079</p>
+                        <p><strong>Email: </strong>dishu01082003[at]gmail[dot]com</p>
+                        <p><strong>Research Interests:</strong>
+                            <div class="text-secondary fw-bold my-2">This is Research</div>
+                        </p>
+                        <p><strong>Homepage:</strong> <a href="#">Link</a></p>
+                        <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
+                </div>
+            </div>
+            <div>
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Signal Processing and Communication
+                    <hr>
+                </div>
+                <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
+                    <div class="p-4">
+                        <p class="fw-bold h2">Test Faculty</p>
+                        <p class="text-secondary h4">Assistant Professor</p>
+                        <div class="w-100">
+                            <hr class="dropdown-divider text-info">
+                        </div>
+                        <p><strong>Phone: </strong>9876543210</p>
+                        <p><strong>Email: </strong>test1[at]gmail[dot]com</p>
+                        <p><strong>Research Interests:</strong>
+                            <div class="text-secondary fw-bold my-2">NA</div>
+                        </p>
+                        <p><strong>Homepage:</strong> <a href="#">Link</a></p>
+                        <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
+                </div>
+            </div>
+        </section>
     </div>
-    </div>
-    <!--  Ended -->
+    <!-- Content Ended -->
     <!-- Footer Started -->
     <footer class="text-center text-lg-start text-white h-100vh d-flex justify-content-between align-items-stretch flex-column" style="background-color: var(--dark)">
         <section class="d-flex justify-content-between p-4" style="background-color: var(--shade2)">
@@ -279,55 +315,35 @@
               </p>
               <!-- Add more Other Links -->
               <!-- Uncomment the following line if needed -->
-              <p>
-                <a href="/login" class="text-white underline-hover"
-                  >Administrative Login</a
-                >
-              </p>
+              <!-- <p><a href="/login" class="text-white underline-hover">Administrative Login</a></p> -->
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold h3 mb-3" style="color: var(--shade2)">
+                            Contact Us
+                        </h6>
+                        <p>
+                            <i class="fas fa-home mr-5"></i> EE-Office, Department of Electrical Engineering, J.C.Block, IIT Ropar, Rupnagar, Punjab, 140001
+                        </p>
+                        <p><i class="fas fa-envelope mr-5"></i> eeoffice@iitrpr.ac.in</p>
+                        <p><i class="fas fa-phone mr-5"></i> +91-1881-232202</p>
+                        <p><i class="fas fa-print mr-5"></i> NA</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6
-                class="text-uppercase fw-bold h3 mb-3"
-                style="color: var(--shade2)"
-              >
-                Contact Us
-              </h6>
-              <p>
-                <i class="fas fa-home mr-5"></i> EE-Office, Department of
-                Electrical Engineering, J.C.Block, IIT Ropar, Rupnagar, Punjab,
-                140001
-              </p>
-              <p><i class="fas fa-envelope mr-5"></i> eeoffice@iitrpr.ac.in</p>
-              <p><i class="fas fa-phone mr-5"></i> +91-1881-232202</p>
-              <p><i class="fas fa-print mr-5"></i> NA</p>
-            </div>
-          </div>
+        </section>
+        <div class="container">
+            <!-- Replace "path_to_your_gmap" with your Google Maps URL -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d54733.46517815982!2d76.503119!3d30.974903!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3905543310e70e63%3A0x63397d7938035537!2sRupnagar%20Old%20Bus%20Stand%2C%20Chhota%20Khera%2C%20Basant%20Nagar%2C%20Rupnagar%2C%20Punjab%20140001!3m2!1d30.966969499999998!2d76.5338166!4m5!1s0x390554d4ffffffff%3A0xb81f1e2708c91100!2sIndian%20institute%20of%20Technology%20Ropar%2C%20Bara%20Phool%2C%20Punjab%20140001!3m2!1d30.970918299999997!2d76.4731998!5e0!3m2!1sen!2sin!4v1625103532953!5m2!1sen!2sin"
+                width="100%" height="400px" style="border: none" allowfullscreen></iframe>
         </div>
-      </section>
-      <div class="container">
-        <!-- Replace "path_to_your_gmap" with your Google Maps URL -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d54733.46517815982!2d76.503119!3d30.974903!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3905543310e70e63%3A0x63397d7938035537!2sRupnagar%20Old%20Bus%20Stand%2C%20Chhota%20Khera%2C%20Basant%20Nagar%2C%20Rupnagar%2C%20Punjab%20140001!3m2!1d30.966969499999998!2d76.5338166!4m5!1s0x390554d4ffffffff%3A0xb81f1e2708c91100!2sIndian%20institute%20of%20Technology%20Ropar%2C%20Bara%20Phool%2C%20Punjab%20140001!3m2!1d30.970918299999997!2d76.4731998!5e0!3m2!1sen!2sin!4v1625103532953!5m2!1sen!2sin"
-          width="100%"
-          height="400px"
-          style="border: none"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div
-        class="container text-center pb-4"
-        style="background-color: var(--dark); color: var(--light)"
-      >
-        <hr />
-        <div class="d-flex justify-content-between align-items-center">
-          <div id="current_datetime" class="fw-bold"></div>
-          <div>
-            <!-- Replace the placeholder text with your copyright information -->
-            Copyright © 2023 IIT Ropar. Designed & Developed by
-            <a
-              href="https://www.linkedin.com/"
-              class="text-white underline-hover"
-              >CVPR Lab</a
+        <div class="container text-center pb-4" style="background-color: var(--dark); color: var(--light)">
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+                <div id="current_datetime" class="fw-bold"></div>
+                <div>
+                    <!-- Replace the placeholder text with your copyright information -->
+                    Copyright © 2023 IIT Ropar. Designed & Developed by
+                    <a href="https://www.linkedin.com/" class="text-white underline-hover">CVPR Lab</a
             >
           </div>
           <div class="ml-5">Last Updated - 04-09-2023</div>
