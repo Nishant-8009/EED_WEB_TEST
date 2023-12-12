@@ -1,5 +1,5 @@
 const FilterStudents = (query, id) => {
-    const notFoundMessageElement = document.getElementById(`notFoundMessage${id}`);
+    const notFoundMessageElement = document.getElementById(`notFoundMessage${Number(id)==1?"":Number(id)-1}`);
     notFoundMessageElement.style.display = "none";
     const cardBody = document.querySelectorAll(`#student_table${id} tbody tr`);
     let isFound = false;
