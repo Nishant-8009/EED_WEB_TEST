@@ -15,7 +15,7 @@ const FilterStudents = (query, notFoundMessageElement) => {
 }
 
 window.addEventListener('load', () => {
-    let search = document.getElementById("search");
+    let search = document.getElementById("search_achie");
     const notFoundMessageElement = document.getElementById(`notFoundMessage`);
     notFoundMessageElement.style.display = "none";
     search.addEventListener('input', () => {

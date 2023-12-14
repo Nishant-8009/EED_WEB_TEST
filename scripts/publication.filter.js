@@ -41,7 +41,7 @@ const FilterYearInit = (year) => {
         let hasMatches = false;
 
         publications.forEach((publication) => {
-            const year_i = publication.querySelector(".date").textContent.split(" ").pop().replace(",", "");
+            const year_i = publication.querySelector(".date span").textContent;
 
             if (year_i == year) {
                 publication.classList.remove("hidden");
@@ -104,7 +104,7 @@ const FilterPublicationTypeInit = (type) => {
         publications.forEach((publication) => {
             const publicationType = publication.querySelector(".journal").textContent.toLowerCase();
 
-            if (publicationType.includes(type.toLowerCase())) {
+            if (publicationType.toLocaleLowerCase().includes(type.toLowerCase())) {
                 publication.classList.remove("hidden");
                 hasMatches = true;
             } else {
