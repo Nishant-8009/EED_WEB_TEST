@@ -122,7 +122,11 @@ const FilterPublicationTypeInit = (type) => {
 
 document.addEventListener("DOMContentLoaded", () => {
     FilterSearchbarInit();
-    FilterYearInit(0);
-    FilterFacultyInit(0);
-    FilterPublicationTypeInit(0);
+    try {
+        FilterYearInit(0);
+        FilterFacultyInit(0);
+        FilterPublicationTypeInit(0);
+    } catch {
+
+    }
 });

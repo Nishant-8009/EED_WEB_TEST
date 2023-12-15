@@ -3,7 +3,6 @@ const FilterStudents = (query, notFoundMessageElement) => {
     let isFound = false;
     data.forEach((item) => {
         const text = item.innerText.trim().toString().toLowerCase();
-        console.log(text)
         if (text.includes(query.toLowerCase())) {
             isFound = true;
             item.style.display = "list-item";
