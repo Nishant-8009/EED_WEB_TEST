@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Department of Electrical Engineering</title>
-    <link
-      rel="shortcut icon"
-      href="https://www.iitrpr.ac.in/sites/default/files/logo_0_1.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="https://www.iitrpr.ac.in/sites/default/files/logo_0_1.png" type="image/x-icon" />
     <meta name="description" content />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
     <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" class="theme" href="./../css/theme.css" />
     <link rel="stylesheet" href="./../css/common.css" />
@@ -43,67 +28,44 @@
     <script src="./../scripts/footer.js"></script>
     <script src="./../scripts/navbar.js"></script>
     <script src="./../scripts/research.highlights.js"></script>
-  </head>
+    <script src="./../scripts/students.filter.js"></script>
+</head>
 
-  <body>
+<body>
     <!-- Navbar Started -->
-    <div
-      id="navbarCustom"
-      class="bg-white w-100 m-0 top-0"
-      style="z-index: 999"
-    >
-      <div class="container-fluid p-0 bg-nav">
-        <div
-          class="row d-flex align-items-center mx-lg-3 mx-2"
-          style="justify-content: space-between"
-        >
-          <div class="col-12 col-lg-3 p-0">
-            <div class="display-3 fw-bold p-0 text-center text-lg-center">
-              <a href="https://iitrpr.ac.in/" target="_blank">
-                <img
-                  src="./../assets/new_logo.png"
-                  alt="logo"
-                  class="logo_img"
-                />
-              </a>
-            </div>
-            <hr class="d-block d-lg-none" />
-          </div>
-          <div class="col-12 col-lg-3 p-0">
-            <div
-              class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center"
-            >
-              <!-- <div class="pt-2">+91-1881-232202</div>
-                          <div>eeoffice@iitrpr.ac.in</div> -->
-              <div class="pb-2">
-                <div class>
-                  <div id="google_translate_element"></div>
+    <div id="navbarCustom" class="bg-white w-100 m-0 top-0" style="z-index: 999">
+        <div class="container-fluid p-0 bg-nav">
+            <div class="row d-flex align-items-center mx-lg-3 mx-2" style="justify-content: space-between">
+                <div class="col-12 col-lg-3 p-0">
+                    <div class="display-3 fw-bold p-0 text-center text-lg-center">
+                        <a href="https://iitrpr.ac.in/" target="_blank">
+                            <img src="./../assets/new_logo.png" alt="logo" class="logo_img" />
+                        </a>
+                    </div>
+                    <hr class="d-block d-lg-none" />
                 </div>
-              </div>
+                <div class="col-12 col-lg-3 p-0">
+                    <div class="d-flex justify-content-center align-items-end flex-column px-lg-none px-0 mobile_center">
+                        <!-- <div class="pt-2">+91-1881-232202</div>
+                          <div>eeoffice@iitrpr.ac.in</div> -->
+                        <div class="pb-2">
+                            <div class>
+                                <div id="google_translate_element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="navbarBgDark" data-bs-theme="dark">
-          <nav
-            class="navbar navbar-expand-lg justify-content-center justify-content-lg-between p-0"
-          >
-            <button
-              class="shadow-none d-lg-none navbar-toggler m-3 w-100 text-white text-center"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              id="toggle-btn-custom"
-              style="
+            <div class="navbarBgDark" data-bs-theme="dark">
+                <nav class="navbar navbar-expand-lg justify-content-center justify-content-lg-between p-0">
+                    <button class="shadow-none d-lg-none navbar-toggler m-3 w-100 text-white text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn-custom"
+                        style="
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 outline: none;
                 border: none;
-              "
-            >
+              ">
               <span class="material-symbols-outlined">menu</span>
               <span
                 class="h5 d-flex justify-content-center align-items-center pt-2"
@@ -111,56 +73,35 @@
                 Menu
               </span>
             </button>
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarNavDropdown"
-            >
-              <ul class="navbar-nav text-uppercase ps-2">
-                <!-- Main Links -->
-                <li class="nav-item">
-                  <a
-                    class="nav-link active pe-3 fw-bold"
-                    href="/pages/home.html"
-                    >Home</a
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                        <ul class="navbar-nav text-uppercase ps-2">
+                            <!-- Main Links -->
+                            <li class="nav-item">
+                                <a class="nav-link active pe-3 fw-bold" href="/pages/home.html">Home</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/about.html">About</a>
-                </li>
-                <!-- People Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                            </li>
+                            <!-- People Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     People
                   </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Faculty</a>
-                    <a class="dropdown-item" href="#">Staff</a>
-                    <a class="dropdown-item" href="#">Students</a>
-                  </div>
-                </li>
-                <!-- Courses Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Faculty</a>
+                                    <a class="dropdown-item" href="#">Staff</a>
+                                    <a class="dropdown-item" href="#">Students</a>
+                                </div>
+                            </li>
+                            <!-- Courses Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Courses
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="/pages/course.html"
-                        >Btech</a
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/course.html">Btech</a
                       >
                     </li>
                     <li></li>
@@ -171,42 +112,34 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="/pages/course.html">Phd</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/pages/course.html">Msc</a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- Research Dropdown -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/course.html">Msc</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Research Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Research
                   </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
-                    <a class="dropdown-item" href="/pages/facilities.html">
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/pages/areas.html">Areas</a>
+                                    <a class="dropdown-item" href="/pages/facilities.html">
                       Facility
                     </a>
-                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
-                    <a class="dropdown-item" href="/pages/publications.html">
+                                    <a class="dropdown-item" href="/pages/lab.html">Labs</a>
+                                    <a class="dropdown-item" href="/pages/publications.html">
                       Publications
                     </a>
-                    <a class="dropdown-item" href="/pages/project.html">
+                                    <a class="dropdown-item" href="/pages/project.html">
                       Projects
                     </a>
-                  </div>
-                </li>
-                <!-- Other Links -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/addmissions.html"
-                    >Admissions</a
+                                </div>
+                            </li>
+                            <!-- Other Links -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/addmissions.html">Admissions</a
                   >
                 </li>
                 <li class="nav-item">
@@ -216,27 +149,39 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/committe.html">Committee</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/contact.html">Contact</a>
-                </li>
-              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </nav>
         </div>
-      </div>
     </div>
     <!-- Navbar Ended -->
     <!-- Started  -->
-    <div
-      class="w-100 d-flex justify-content-center align-items-center flex-column py-5"
-    >
-      <h1 class="text-center main_head mb-5">
-        Research <span> Projects</span>
-      </h1>
-      <div class="container">
+    <div class="w-100 d-flex justify-content-center align-items-center flex-column py-5">
+        <h1 class="text-center main_head mb-5">
+            Research <span> Projects</span>
+        </h1>
+        <div class="container">
+            <div class="form-group mb-3">
+                <label for="search_faculty" class="mb-2 fw-bold"><i class="fa-solid fa-magnifying-glass"></i> Search a
+            Project</label
+          >
+          <input
+            type="text"
+            name="search_faculty"
+            id="search_student"
+            class="form-control p-3"
+            placeholder="Search by Name, Research Interests, etc.."
+          />
+        </div>
+
         <table
           class="table table-bordered table-hover table-responsive table-striped"
+          id="student_table1"
         >
           <thead>
             <tr class="table-dark">
@@ -295,6 +240,13 @@
             </tr>
           </tbody>
         </table>
+        <div
+          class="w-100 text-center fade-in-custom my-5"
+          id="notFoundMessage"
+          style="display: none"
+        >
+          <h2 class="fw-bold text-danger">Project Not Found!</h2>
+        </div>
       </div>
     </div>
     <!--  Ended -->

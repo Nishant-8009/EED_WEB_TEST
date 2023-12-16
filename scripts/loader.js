@@ -14,7 +14,7 @@ const loaderInit = () => {
 
     // Create an h1 element
     let h1 = document.createElement('h1');
-    h1.className = "fw-bold mt-5 h1 loader_anm anim-typewriter line-1";
+    h1.className = "fw-bold mt-5 h1 loader_anm line-1";
     h1.textContent = "Department of Electrical Engineering";
 
     // Append img and h1 to loaderContainer

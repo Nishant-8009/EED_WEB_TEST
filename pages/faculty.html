@@ -25,6 +25,7 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./../scripts/faculty.filters.js"></script>
 </head>
 
 <body>
@@ -160,7 +161,7 @@
     <div class="my-5 container">
         <div class="h1 text-center main_head mb-5"> <span>Faculty </span><small>Members</small></div>
         <div class="bg-dark p-3 my-3 rounded-4 position-sticky" style="z-index: 2;">
-            <ul class="nav nav-pills nav-fill">
+            <ul class="nav nav-pills nav-fill" id="filter_by_types">
                 <li class="nav-item"><span class="nav-link active" aria-current="page" aria-disabled="true">All</span></li>
                 <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Head of the Department</span></li>
                 <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Power Engineering</span></li>
@@ -169,13 +170,14 @@
                 <li class="nav-item"><span class="nav-link false" aria-current="page" aria-disabled="true">Faculty Fellows</span></li>
             </ul>
         </div>
-        <div class="my-3">
-
-            <input type="text" name="search" id="search" class="form-control p-3" placeholder="Search by Name, Research Interests, etc.." value="" fdprocessedid="2iss"></div>
+        <div class="my-5 form-group">
+            <label for="search_faculty" class="mb-2 fw-bold"><i class="fa-solid fa-magnifying-glass "></i> Search a Faculty Member</label>
+            <input type="text" name="search_faculty" id="search_faculty" class="form-control p-3" placeholder="Search by Name, Research Interests, etc..">
+        </div>
 
         <section>
-            <div>
-                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Power Engineering
+            <div id="Head of the Department" class="faculty_section fade-in-custom">
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Head of Department
                     <hr>
                 </div>
                 <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
@@ -194,8 +196,8 @@
                         <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
                 </div>
             </div>
-            <div>
-                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Microelectronics &amp; VLSI Design
+            <div id="Power Engineering" class="faculty_section fade-in-custom">
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Power Engineering
                     <hr>
                 </div>
                 <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
@@ -214,27 +216,29 @@
                         <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
                 </div>
             </div>
-            <div>
+            <div id="Microelectronics and VLSI Design" class="faculty_section fade-in-custom">
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Microelectronics and VLSI Design
+                    <hr>
+                </div>
+                <!-- Add Faculty Cards -->
+            </div>
+            <div id="Signal Processing and Communication" class="faculty_section fade-in-custom">
                 <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Signal Processing and Communication
                     <hr>
                 </div>
-                <div class="card shadow-sm flex-lg-row flex-column rounded-2 people_card my-5"><img src="./../assets/EE_RSF2023.jpg" alt="Profile Image" class="rounded-2 hover-scale-up">
-                    <div class="p-4">
-                        <p class="fw-bold h2">Test Faculty</p>
-                        <p class="text-secondary h4">Assistant Professor</p>
-                        <div class="w-100">
-                            <hr class="dropdown-divider text-info">
-                        </div>
-                        <p><strong>Phone: </strong>9876543210</p>
-                        <p><strong>Email: </strong>test1[at]gmail[dot]com</p>
-                        <p><strong>Research Interests:</strong>
-                            <div class="text-secondary fw-bold my-2">NA</div>
-                        </p>
-                        <p><strong>Homepage:</strong> <a href="#">Link</a></p>
-                        <hr class="dropdown-divider text-secondary"><a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Profile</a></div>
-                </div>
+                <!-- Add Faculty Cards -->
             </div>
+            <div id="Faculty Fellows" class="faculty_section fade-in-custom">
+                <div class="h1 fw-bold text-dark mb-4 text-center my-5"> Faculty Fellows
+                    <hr>
+                </div>
+                <!-- Add Faculty Cards -->
+            </div>
+            <!-- Add all  -->
         </section>
+        <div class="w-100 text-center hidden fade-in-custom my-5" id="error_div">
+            <h2 class="fw-bold text-danger">Faculty Not Found!</h2>
+        </div>
     </div>
     <!-- Content Ended -->
     <!-- Footer Started -->

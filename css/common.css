@@ -378,3 +378,7 @@ body {
     user-select: none !important;
     cursor: pointer;
 }
+
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,14 @@
+<div class="bg-white h-100vh d-flex justify-content-center align-items-center w-100 flex-column bg-logo position-fixed top-0 loader_container" id="main_loader">
+    <img src="./../assets/news/footer_logo.svg" alt="Main_logo" srcset="./../assets/news/footer_logo.svg" class="loader_anm" />
+    <h1 class="fw-bold mt-5 h1 loader_anm line-1">
+        Department of Electrical Engineering
+    </h1>
+</div>
+<script>
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            let elem = document.getElementById("main_loader");
+            elem.remove();
+        }, 1000);
+    });
+</script>

@@ -31,7 +31,7 @@
     <script src="./../scripts/navbar.js"></script>
     <script src="./../scripts/research.highlights.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="./../scripts/students.filter.js"></script>
+    <script src="./../scripts/staff.filter.js"></script>
 </head>
 
 <body>
@@ -168,30 +168,154 @@
         <div class="h1 text-center main_head mb-4">Staff Members</div>
         <div class="container">
             <div class="my-3">
-                <input type="text" name="search" id="search_student" class="form-control p-3 w-100" style="box-shadow: none" placeholder="Search.." />
+                <input type="text" name="search" id="search_staff" class="form-control p-3 w-100 " style="box-shadow: none" placeholder="Search.." />
             </div>
 
-            <div id="notFoundMessage" class="alert alert-danger mt-4" role="alert" style="display: none">
+            <div id="notFoundMessage_staff" class="h3 my-5 fade-in-custom text-center fw-bold text-danger" style="display: none">
                 Staff Not found.
             </div>
-            <div class="card_container" id="card_body">
-                <div class="card">
-                    <div class="card-top" style="
-                  background-image: url(./../assets/EE_RSF2023_2.jpg);
-                  width: 150px;
-                  background-size: cover;
-                  background-position: center;
-                "></div>
-                    <div class="card-info1">
-                        <div class="card-info">
-                            <h2>Amit Kumar</h2>
-                            <!-- <span class="pos">2026</span> -->
-                            <ul style="list-style-type: none; padding-inline: 0px">
-                                <li>Designation : Lab Assistant</li>
-                                <li>Address : NA</li>
-                                <li>E-mail : test@iitrpr.ac.in</li>
-                                <li>Mobile :+91-9876543210</li>
-                            </ul>
+            <div class="card_container d-flex justify-content-center flex-wrap gap-4 my-5" id="card_body">
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Dishant Kumar</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test1</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2 fade-in-custom shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="./../assets/EE_RSF2023_2.jpg" alt="Generic placeholder image" class="img-fluid rounded-2">
+                            </div>
+                            <div class="flex-grow-1 p-3">
+                                <h4 class="fw-bold text-dark">Test 2</h4>
+                                <ul style="list-style-type: none; padding-inline: 0px" class="text-secondary">
+                                    <li><strong>Designation</strong> : Xuesheng</li>
+                                    <li><strong>Address</strong> : NA</li>
+                                    <li><strong>E-mail</strong> : test@iitrpr.ac.in</li>
+                                    <li><strong>Mobile </strong>:+91-9992115079</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
