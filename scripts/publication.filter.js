@@ -120,6 +120,9 @@ const FilterPublicationTypeInit = (type) => {
     }
 }
 
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     FilterSearchbarInit();
     try {

@@ -33,7 +33,32 @@ function googleTranslateElementInit() {
 }
 
 
-// Navbar
+// Handle Page Change
+
+const handlePageChange = (links) => {
+
+    links.map((link, index) => {
+        link.addEventListener('click', () => {
+            localStorage.setItem("active_nav_link", index);
+        })
+    })
+
+}
+document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll("#navbar_links .nav-item");
+        var active_tab = localStorage.getItem("active_nav_link");
+        console.log(links)
+        links.map((link, index) => {
+            let a_tag = link.a;
+            if (index == active_tab) {
+                a_tag.classList.add("active");
+            } else {
+                a_tag.classList.remove("active");
+            }
+        })
+        handlePageChange(links);
+    })
+    // Navbar
 document.addEventListener("DOMContentLoaded", function() {
     const navBar = document.querySelector(".navbarBgDark");
     let prevScrollPos = window.scrollY;
