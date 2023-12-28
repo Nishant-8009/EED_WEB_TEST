@@ -382,3 +382,21 @@ body {
 .hidden {
     display: none !important;
 }
+
+
+/* Add this for the forms  */
+
+label {
+    font-weight: bolder !important;
+    color: var(--dark) !important;
+}
+
+input,
+select {
+    border-color: var(--dark) !important;
+    border-radius: 0px !important;
+}
+
+input::placeholder {
+    color: var(--dark) !important;
+}
